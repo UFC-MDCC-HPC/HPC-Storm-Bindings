@@ -9,12 +9,15 @@
       <File FileName="../br.ufc.mdcc.hpc.storm.binding.channel.Binding/src/1.0.0.0/BaseIChannelR.cs" Line="1" Column="1" />
       <File FileName="../br.ufc.mdcc.hpc.storm.binding.channel.Binding/src/1.0.0.0/Intercommunicator.cs" Line="1" Column="1" />
       <File FileName="../br.ufc.mdcc.hpc.storm.binding.channel.Binding/src/1.0.0.0/Status.cs" Line="1" Column="1" />
-      <File FileName="../br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C/src/1.0.0.0/BaseIProviderA2C.cs" Line="8" Column="37" />
-      <File FileName="../br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImpl1NACI/src/1.0.0.0/BaseIPartnerLImpl.cs" Line="8" Column="19" />
+      <File FileName="../br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C/src/1.0.0.0/BaseIProviderA2C.cs" Line="1" Column="1" />
+      <File FileName="../br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImpl1NACI/src/1.0.0.0/BaseIPartnerLImpl.cs" Line="14" Column="17" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True" selected="True">
+        <State expanded="True">
+          <Node name="br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImpl1NACI" expanded="True">
+            <Node name="BaseIPartnerLImpl.cs" selected="True" />
+          </Node>
           <Node name="HPCStormBindings" expanded="True" />
         </State>
       </Pad>

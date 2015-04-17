@@ -13,6 +13,7 @@
       </sources>
       <references>
         <include name="br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IPartnerKind.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent/bin/1.0.0.0/IPartnerKindComponent.dll"/>
         <include name="br.ufc.mdcc.hpc.storm.binding.channel.Binding/bin/1.0.0.0/BaseIChannelL.dll"/>
         <include/>
       </references>
@@ -22,7 +23,7 @@
         <include name="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/src/1.0.0.0/IChannelLImpl.cs"/>
       </sources>
       <references>
-        <include name="br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IPartnerKind.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent/bin/1.0.0.0/IPartnerKindComponent.dll"/>
         <include name="/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/bin/1.0.0.0/BaseIChannelLImpl.dll"/>
         <include name="br.ufc.mdcc.hpc.storm.binding.channel.Binding/bin/1.0.0.0/IChannelL.dll"/>
         <include/>
@@ -34,6 +35,7 @@
       </sources>
       <references>
         <include name="br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IPartnerKind.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent/bin/1.0.0.0/IPartnerKindComponent.dll"/>
         <include name="br.ufc.mdcc.hpc.storm.binding.channel.Binding/bin/1.0.0.0/BaseIChannelR.dll"/>
         <include/>
       </references>
@@ -43,7 +45,7 @@
         <include name="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/src/1.0.0.0/IChannelRImpl.cs"/>
       </sources>
       <references>
-        <include name="br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IPartnerKind.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent/bin/1.0.0.0/IPartnerKindComponent.dll"/>
         <include name="/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/bin/1.0.0.0/BaseIChannelRImpl.dll"/>
         <include name="br.ufc.mdcc.hpc.storm.binding.channel.Binding/bin/1.0.0.0/IChannelR.dll"/>
         <include/>

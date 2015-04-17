@@ -66,13 +66,13 @@
       <Project>{40488558-F21F-4863-A466-15F96A6CD131}</Project>
       <Name>br.ufc.mdcc.hpc.storm.binding.channel.Binding</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent\br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent\br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent.csproj">
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent\br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent\br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent.csproj">
       <Project>{53D1C19B-E64C-4D09-BA8B-C45C12AC3BF9}</Project>
-      <Name>br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent</Name>
+      <Name>br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\br.ufc.mdcc.hpe.storm.binding.context.PartnerKindApplication\br.ufc.mdcc.hpe.storm.binding.context.PartnerKindApplication\br.ufc.mdcc.hpe.storm.binding.context.PartnerKindApplication.csproj">
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.storm.binding.context.PartnerKindApplication\br.ufc.mdcc.hpc.storm.binding.context.PartnerKindApplication\br.ufc.mdcc.hpc.storm.binding.context.PartnerKindApplication.csproj">
       <Project>{CC615D74-992F-4BCD-8926-AFB3F1C8301E}</Project>
-      <Name>br.ufc.mdcc.hpe.storm.binding.context.PartnerKindApplication</Name>
+      <Name>br.ufc.mdcc.hpc.storm.binding.context.PartnerKindApplication</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

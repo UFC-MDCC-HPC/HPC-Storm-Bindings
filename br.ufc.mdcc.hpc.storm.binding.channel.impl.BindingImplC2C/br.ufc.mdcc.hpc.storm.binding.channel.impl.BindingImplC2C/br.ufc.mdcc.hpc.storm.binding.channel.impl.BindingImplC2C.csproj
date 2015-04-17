@@ -63,9 +63,9 @@
       <Project>{CE63E9CF-88BE-4143-BA6F-E555C742E877}</Project>
       <Name>br.ufc.mdcc.hpc.storm.binding.context.PartnerKind</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent\br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent\br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent.csproj">
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent\br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent\br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent.csproj">
       <Project>{53D1C19B-E64C-4D09-BA8B-C45C12AC3BF9}</Project>
-      <Name>br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent</Name>
+      <Name>br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

@@ -29,9 +29,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.bindi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImplMNCCD", "..\br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImplMNCCD\br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImplMNCCD\br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImplMNCCD.csproj", "{F8287D19-1FF6-4E4B-A711-02E23AD6BADE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpe.storm.binding.context.PartnerKindApplication", "..\br.ufc.mdcc.hpe.storm.binding.context.PartnerKindApplication\br.ufc.mdcc.hpe.storm.binding.context.PartnerKindApplication\br.ufc.mdcc.hpe.storm.binding.context.PartnerKindApplication.csproj", "{CC615D74-992F-4BCD-8926-AFB3F1C8301E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.context.PartnerKindApplication", "..\br.ufc.mdcc.hpc.storm.binding.context.PartnerKindApplication\br.ufc.mdcc.hpc.storm.binding.context.PartnerKindApplication\br.ufc.mdcc.hpc.storm.binding.context.PartnerKindApplication.csproj", "{CC615D74-992F-4BCD-8926-AFB3F1C8301E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent", "..\br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent\br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent\br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent.csproj", "{53D1C19B-E64C-4D09-BA8B-C45C12AC3BF9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent", "..\br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent\br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent\br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent.csproj", "{53D1C19B-E64C-4D09-BA8B-C45C12AC3BF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

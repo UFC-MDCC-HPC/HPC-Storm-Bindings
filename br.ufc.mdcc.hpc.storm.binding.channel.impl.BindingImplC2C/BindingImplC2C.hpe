@@ -25,7 +25,7 @@
     </visualAttributes>
   </header>
   <componentInfo>
-    <innerComponent hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000b7408b9fba2e37aede02daa549c4445aba8acd24dcff06bca62395cb7cd3cdc3665b05f649420553f74b8d541c23bb2a4a00938e7aa01133b71fec1aaf811499149e566abd6971b16c1e7948fda15f1b10ed03d9c55d9d191772f46c6cec6c31307db994d2d60186127ecc28e0c1e449140b547d077de06322ac192408e20ed9" localRef="partner_kind_application" location="br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent/PartnerKindComponent.hpe" multiple="false" name="PartnerKindComponent" package="br.ufc.mdcc.hpe.storm.binding.context" exposed="false">
+    <innerComponent hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000b7408b9fba2e37aede02daa549c4445aba8acd24dcff06bca62395cb7cd3cdc3665b05f649420553f74b8d541c23bb2a4a00938e7aa01133b71fec1aaf811499149e566abd6971b16c1e7948fda15f1b10ed03d9c55d9d191772f46c6cec6c31307db994d2d60186127ecc28e0c1e449140b547d077de06322ac192408e20ed9" localRef="partner_kind_application" location="br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent/PartnerKindComponent.hpe" multiple="false" name="PartnerKindComponent" package="br.ufc.mdcc.hpc.storm.binding.context" exposed="false">
       <visualDescription h="60" w="100" x="84" y="391">
         <color b="255" g="255" r="255"/>
       </visualDescription>
@@ -33,7 +33,7 @@
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
-    <innerComponent hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000b7408b9fba2e37aede02daa549c4445aba8acd24dcff06bca62395cb7cd3cdc3665b05f649420553f74b8d541c23bb2a4a00938e7aa01133b71fec1aaf811499149e566abd6971b16c1e7948fda15f1b10ed03d9c55d9d191772f46c6cec6c31307db994d2d60186127ecc28e0c1e449140b547d077de06322ac192408e20ed9" localRef="pattern_kind_component" location="br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent/PartnerKindComponent.hpe" multiple="false" name="PartnerKindComponent" package="br.ufc.mdcc.hpe.storm.binding.context" exposed="false">
+    <innerComponent hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000b7408b9fba2e37aede02daa549c4445aba8acd24dcff06bca62395cb7cd3cdc3665b05f649420553f74b8d541c23bb2a4a00938e7aa01133b71fec1aaf811499149e566abd6971b16c1e7948fda15f1b10ed03d9c55d9d191772f46c6cec6c31307db994d2d60186127ecc28e0c1e449140b547d077de06322ac192408e20ed9" localRef="pattern_kind_component" location="br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent/PartnerKindComponent.hpe" multiple="false" name="PartnerKindComponent" package="br.ufc.mdcc.hpc.storm.binding.context" exposed="false">
       <visualDescription h="60" w="100" x="310" y="447">
         <color b="255" g="255" r="255"/>
       </visualDescription>
