@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ASCII"?>
+<component:component xmlns:component="http://www.example.org/HashComponent">
+  <header hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000af6fa24a881ea2d43d9bc22c55eb99caa2610364cc51b3718497329db42c38677e395e02f0283259c74983ebc3fc82867467a8236f51231070734c116b94c4e9cf8deb51ba562b685f6fb21ea5d3d2f600aa6723d7a3382e4942352e6714ea7656dab8956a3c3fdf605f4cbd31b0c452a5e830aa8e7a4371e086e0b2528f30b6" isAbstract="true" kind="Qualifier" name="A2C" packagePath="br.ufc.mdcc.hpc.storm.binding.context.partner_kind">
+    <baseType>
+      <extensionType>
+        <extends>true</extends>
+      </extensionType>
+      <component hash_component_UID="00240000048000009400000006020000002400005253413100040000110000009774998f569ea1fa2d53e1954afa255f33267bb8dd768cb5d1f46c0d81bfb0a50aad6c990e505bfb0cb18616b7648f8d6660308207f73b37a738640416bd7dee6c98574f7ea1b21fae4ca78cfa76d80daedf5decdadb2f205e1f557981860345aea67929244dd910b5ac8e542e31c87b26288a2ac32672d45afbb813b7a89480" localRef="base" location="br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/PartnerKind.hpe" name="PartnerKind" package="br.ufc.mdcc.hpc.storm.binding.context" version="1.0.0.0">
+        <visualDescription h="60" w="100" x="144" y="178">
+          <color b="255" g="255" r="255"/>
+        </visualDescription>
+        <unitBounds parallel="true" uRef="user_partner_kind">
+          <visualDescription h="20" w="20" x="5" y="2"/>
+        </unitBounds>
+        <unitBounds parallel="true" uRef="provider_partner_kind">
+          <visualDescription h="20" w="20" x="28" y="2"/>
+        </unitBounds>
+      </component>
+    </baseType>
+    <versions field1="1" field2="0" field3="0" field4="0"/>
+    <visualAttributes>
+      <color b="255" g="255" r="255"/>
+    </visualAttributes>
+  </header>
+  <componentInfo>
+    <interface iRef="IUserA2C" nArgs="0">
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.PartnerKind;&#xA;&#xA;namespace br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C { &#xA;&#xA;public interface BaseIUserA2C : BaseIUserPartnerKind, IQualifierKind &#xA;{&#xA;&#xA;&#xA;&#xA;} // end main interface &#xA;&#xA;} // end namespace &#xA;" fileType="library" name="BaseIUserA2C.cs" srcType="base" uri="br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C/bin/1.0.0.0/BaseIUserA2C.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/BaseIUserPartnerKind.dll</dependency>
+        </file>
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.PartnerKind;&#xA;&#xA;namespace br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C { &#xA;&#xA;public interface IUserA2C : BaseIUserA2C, IUserPartnerKind&#xA;{&#xA;&#xA;&#xA;} // end main interface &#xA;&#xA;} // end namespace &#xA;" fileType="library" name="IUserA2C.cs" srcType="user" uri="br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C/bin/1.0.0.0/IUserA2C.dll" versionId="1.0.0.0">
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C/bin/1.0.0.0/BaseIUserA2C.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IUserPartnerKind.dll</dependency>
+        </file>
+      </sources>
+      <visualDescription h="40" w="193" x="50" y="87">
+        <color b="230" g="216" r="173"/>
+      </visualDescription>
+    </interface>
+    <interface iRef="IProviderA2C" nArgs="0">
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.PartnerKind;&#xA;&#xA;namespace br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C { &#xA;&#xA;public interface BaseIProviderA2C : BaseIProviderPartnerKind, IQualifierKind &#xA;{&#xA;&#xA;&#xA;&#xA;} // end main interface &#xA;&#xA;} // end namespace &#xA;" fileType="library" name="BaseIProviderA2C.cs" srcType="base" uri="br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C/bin/1.0.0.0/BaseIProviderA2C.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/BaseIProviderPartnerKind.dll</dependency>
+        </file>
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.PartnerKind;&#xA;&#xA;namespace br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C { &#xA;&#xA;public interface IProviderA2C : BaseIProviderA2C, IProviderPartnerKind&#xA;{&#xA;&#xA;&#xA;} // end main interface &#xA;&#xA;} // end namespace &#xA;" fileType="library" name="IProviderA2C.cs" srcType="user" uri="br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C/bin/1.0.0.0/IProviderA2C.dll" versionId="1.0.0.0">
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C/bin/1.0.0.0/BaseIProviderA2C.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IProviderPartnerKind.dll</dependency>
+        </file>
+      </sources>
+      <visualDescription h="40" w="195" x="283" y="98">
+        <color b="203" g="192" r="255"/>
+      </visualDescription>
+    </interface>
+    <unit facet="0" iRef="IUserA2C" multiple="true" private="false" replica="0" uRef="user_partner_kind" visibleInterface="true">
+      <super cRef="base" uRef="user_partner_kind"/>
+      <visualDescription h="40" w="80" x="93" y="248"/>
+    </unit>
+    <unit facet="0" iRef="IProviderA2C" multiple="true" private="false" replica="0" uRef="provider_partner_kind" visibleInterface="true">
+      <super cRef="base" uRef="provider_partner_kind"/>
+      <visualDescription h="40" w="80" x="415" y="241"/>
+    </unit>
+  </componentInfo>
+</component:component>

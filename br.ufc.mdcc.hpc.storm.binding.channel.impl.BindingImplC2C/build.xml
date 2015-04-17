@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ASCII"?>
+<project xmlns="http://nant.sf.net/release/0.86-beta1/nant.xsd" basedir="/home/heron/hpe/heron/cache" default="all" name="BindingImplC2C">
+  <property name="nant.settings.currentframework" value="mono-2.0"/>
+  <property name="build" value="bin"/>
+  <property name="src" value="src"/>
+  <target name="BindingImplC2C-1.0.0.0">
+    <ifnot targetexists="/home/heron/Dropbox/Alunos/Jo&#xe3;o Marcelo/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C/bin/1.0.0.0">
+      <mkdir dir="/home/heron/Dropbox/Alunos/Jo&#xe3;o Marcelo/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C/bin/1.0.0.0"/>
+    </ifnot>
+    <csc debug="true" keyfile="/home/heron/Dropbox/Alunos/Jo&#xe3;o Marcelo/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C/BindingImplC2C.snk" optimize="true" output="/home/heron/Dropbox/Alunos/Jo&#xe3;o Marcelo/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C/bin/1.0.0.0/BaseIChannel1ImplC2C.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/heron/Dropbox/Alunos/Jo&#xe3;o Marcelo/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C/src/1.0.0.0/BaseIChannel1ImplC2C.cs"/>
+      </sources>
+      <references>
+        <include name="br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IUserPartnerKind.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.context.partner_kind.C2C/bin/1.0.0.0/IUserC2C.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.channel.Binding/bin/1.0.0.0/BaseIChannel1.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/heron/Dropbox/Alunos/Jo&#xe3;o Marcelo/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C/BindingImplC2C.snk" optimize="true" output="/home/heron/Dropbox/Alunos/Jo&#xe3;o Marcelo/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C/bin/1.0.0.0/IChannel1ImplC2C.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/heron/Dropbox/Alunos/Jo&#xe3;o Marcelo/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C/src/1.0.0.0/IChannel1ImplC2C.cs"/>
+      </sources>
+      <references>
+        <include name="br.ufc.mdcc.hpc.storm.binding.context.partner_kind.C2C/bin/1.0.0.0/IUserC2C.dll"/>
+        <include name="/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C/bin/1.0.0.0/BaseIChannel1ImplC2C.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.channel.Binding/bin/1.0.0.0/IChannel1.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/heron/Dropbox/Alunos/Jo&#xe3;o Marcelo/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C/BindingImplC2C.snk" optimize="true" output="/home/heron/Dropbox/Alunos/Jo&#xe3;o Marcelo/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C/bin/1.0.0.0/BaseIChannel2ImplC2C.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/heron/Dropbox/Alunos/Jo&#xe3;o Marcelo/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C/src/1.0.0.0/BaseIChannel2ImplC2C.cs"/>
+      </sources>
+      <references>
+        <include name="br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IProviderPartnerKind.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.context.partner_kind.C2C/bin/1.0.0.0/IProviderC2C.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.channel.Binding/bin/1.0.0.0/BaseIChannel2.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/heron/Dropbox/Alunos/Jo&#xe3;o Marcelo/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C/BindingImplC2C.snk" optimize="true" output="/home/heron/Dropbox/Alunos/Jo&#xe3;o Marcelo/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C/bin/1.0.0.0/IChannel2ImplC2C.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/heron/Dropbox/Alunos/Jo&#xe3;o Marcelo/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C/src/1.0.0.0/IChannel2ImplC2C.cs"/>
+      </sources>
+      <references>
+        <include name="br.ufc.mdcc.hpc.storm.binding.context.partner_kind.C2C/bin/1.0.0.0/IProviderC2C.dll"/>
+        <include name="/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C/bin/1.0.0.0/BaseIChannel2ImplC2C.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.channel.Binding/bin/1.0.0.0/IChannel2.dll"/>
+        <include/>
+      </references>
+    </csc>
+  </target>
+  <target depends="BindingImplC2C-1.0.0.0" name="all"/>
+</project>

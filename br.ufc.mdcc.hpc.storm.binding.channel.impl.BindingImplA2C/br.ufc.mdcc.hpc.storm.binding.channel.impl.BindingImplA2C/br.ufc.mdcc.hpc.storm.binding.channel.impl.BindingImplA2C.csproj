@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{45417150-CDE1-46F0-9463-4FA5D6F30923}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplA2C</RootNamespace>
+    <AssemblyName>br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplA2C</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\BindingImplA2C.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="DGAC">
+      <HintPath>..\..\..\..\..\..\usr\lib\mono\DGAC\DGAC.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\src\1.0.0.0\BaseIChannel1ImplA2C.cs">
+      <Link>BaseIChannel1ImplA2C.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\BaseIChannel2ImplA2C.cs">
+      <Link>BaseIChannel2ImplA2C.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\IChannel1ImplA2C.cs">
+      <Link>IChannel1ImplA2C.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\IChannel2ImplA2C.cs">
+      <Link>IChannel2ImplA2C.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C\br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C\br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C.csproj">
+      <Project>{36B510D0-5392-4ACA-89C2-EB2347B684A1}</Project>
+      <Name>br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.storm.binding.context.PartnerKind\br.ufc.mdcc.hpc.storm.binding.context.PartnerKind\br.ufc.mdcc.hpc.storm.binding.context.PartnerKind.csproj">
+      <Project>{CE63E9CF-88BE-4143-BA6F-E555C742E877}</Project>
+      <Name>br.ufc.mdcc.hpc.storm.binding.context.PartnerKind</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.storm.binding.channel.Binding\br.ufc.mdcc.hpc.storm.binding.channel.Binding\br.ufc.mdcc.hpc.storm.binding.channel.Binding.csproj">
+      <Project>{40488558-F21F-4863-A466-15F96A6CD131}</Project>
+      <Name>br.ufc.mdcc.hpc.storm.binding.channel.Binding</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

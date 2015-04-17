@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ASCII"?>
+<project xmlns="http://nant.sf.net/release/0.86-beta1/nant.xsd" basedir="/home/heron/hpe/heron/cache" default="all" name="BindingImplC2A">
+  <property name="nant.settings.currentframework" value="mono-2.0"/>
+  <property name="build" value="bin"/>
+  <property name="src" value="src"/>
+  <target name="BindingImplC2A-1.0.0.0">
+    <ifnot targetexists="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/bin/1.0.0.0">
+      <mkdir dir="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/bin/1.0.0.0"/>
+    </ifnot>
+    <csc debug="true" keyfile="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/BindingImplC2A.snk" optimize="true" output="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/bin/1.0.0.0/BaseIChannelLImpl.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/src/1.0.0.0/BaseIChannelLImpl.cs"/>
+      </sources>
+      <references>
+        <include name="br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IPartnerKind.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.channel.Binding/bin/1.0.0.0/BaseIChannelL.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/BindingImplC2A.snk" optimize="true" output="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/bin/1.0.0.0/IChannelLImpl.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/src/1.0.0.0/IChannelLImpl.cs"/>
+      </sources>
+      <references>
+        <include name="br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IPartnerKind.dll"/>
+        <include name="/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/bin/1.0.0.0/BaseIChannelLImpl.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.channel.Binding/bin/1.0.0.0/IChannelL.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/BindingImplC2A.snk" optimize="true" output="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/bin/1.0.0.0/BaseIChannelRImpl.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/src/1.0.0.0/BaseIChannelRImpl.cs"/>
+      </sources>
+      <references>
+        <include name="br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IPartnerKind.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.channel.Binding/bin/1.0.0.0/BaseIChannelR.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/BindingImplC2A.snk" optimize="true" output="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/bin/1.0.0.0/IChannelRImpl.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/src/1.0.0.0/IChannelRImpl.cs"/>
+      </sources>
+      <references>
+        <include name="br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IPartnerKind.dll"/>
+        <include name="/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/bin/1.0.0.0/BaseIChannelRImpl.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.channel.Binding/bin/1.0.0.0/IChannelR.dll"/>
+        <include/>
+      </references>
+    </csc>
+  </target>
+  <target depends="BindingImplC2A-1.0.0.0" name="all"/>
+</project>

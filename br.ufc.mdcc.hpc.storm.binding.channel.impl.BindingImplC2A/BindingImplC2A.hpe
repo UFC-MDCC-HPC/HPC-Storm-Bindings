@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ASCII"?>
+<component:component xmlns:component="http://www.example.org/HashComponent">
+  <header hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000af8d99227121f05bc96362a55d523a53a1e629e8fd2dfcae4ddd50159e9f91f1ec66abfdc5e4330d52a961d14f1479fb6f7950fc29fbc322e6e9147e3e706c3ac4d24039344ca6a7006903366bbaf8898570e15f406309e5c63bf2e91d4ad14bbffe2b252304d7d6b660186f7c727838497aa8d4d39cbc8b1930214518c444b9" isAbstract="false" kind="Synchronizer" name="BindingImplC2A" packagePath="br.ufc.mdcc.hpc.storm.binding.channel.impl">
+    <baseType>
+      <extensionType>
+        <implements>true</implements>
+      </extensionType>
+      <component hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000174170214ec8de902f58c9e2758714817ff949c0c098fc0bb0d7f68cfab78767e1a0c1983242dfd742d7e3732d9050312c8c95d9130a7071b3ccddfe9b59fd7b8df6676b7b12a4a3f7e1fdad77bdaeb4396d673feddeaf3545c105ba8114bc03f067758555bf72db629d435bfeae77bbb9a77a0690d7415de49fea886da17dd1" localRef="base" location="br.ufc.mdcc.hpc.storm.binding.channel.Binding/Binding.hpe" name="Binding" package="br.ufc.mdcc.hpc.storm.binding.channel" version="1.0.0.0">
+        <visualDescription h="60" w="164" x="162" y="313">
+          <color b="255" g="255" r="255"/>
+        </visualDescription>
+        <parameter formFieldId="partner_kind_left" varName="PKL"/>
+        <parameter formFieldId="partner_kind_right" varName="PKR"/>
+        <unitBounds parallel="true" uRef="channelL">
+          <visualDescription h="20" w="20" x="24" y="22"/>
+        </unitBounds>
+        <unitBounds parallel="true" uRef="channelR">
+          <visualDescription h="20" w="20" x="121" y="18"/>
+        </unitBounds>
+      </component>
+    </baseType>
+    <versions field1="1" field2="0" field3="0" field4="0"/>
+    <visualAttributes>
+      <color b="255" g="255" r="255"/>
+    </visualAttributes>
+  </header>
+  <componentInfo>
+    <innerComponent hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000b7408b9fba2e37aede02daa549c4445aba8acd24dcff06bca62395cb7cd3cdc3665b05f649420553f74b8d541c23bb2a4a00938e7aa01133b71fec1aaf811499149e566abd6971b16c1e7948fda15f1b10ed03d9c55d9d191772f46c6cec6c31307db994d2d60186127ecc28e0c1e449140b547d077de06322ac192408e20ed9" localRef="partner_kind_application" location="br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent/PartnerKindComponent.hpe" multiple="false" name="PartnerKindComponent" package="br.ufc.mdcc.hpe.storm.binding.context" exposed="false">
+      <visualDescription h="60" w="100" x="142" y="450">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds parallel="true" uRef="partner_kind">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <innerComponent hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000b7408b9fba2e37aede02daa549c4445aba8acd24dcff06bca62395cb7cd3cdc3665b05f649420553f74b8d541c23bb2a4a00938e7aa01133b71fec1aaf811499149e566abd6971b16c1e7948fda15f1b10ed03d9c55d9d191772f46c6cec6c31307db994d2d60186127ecc28e0c1e449140b547d077de06322ac192408e20ed9" localRef="partner_kind_component" location="br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent/PartnerKindComponent.hpe" multiple="false" name="PartnerKindComponent" package="br.ufc.mdcc.hpe.storm.binding.context" exposed="false">
+      <visualDescription h="60" w="100" x="302" y="403">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds parallel="true" uRef="partner_kind">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <supplyParameter cRef="partner_kind_application" direct="true" varName="PKL"/>
+    <supplyParameter cRef="partner_kind_component" direct="true" varName="PKR"/>
+    <interface iRef="IChannelLImpl" nArgs="1">
+      <slice isRef="partner_kind_left">
+        <originRef cRef="partner_kind_left" iRef="IPartnerKind"/>
+        <visualDescription h="10" w="10" x="10" y="24"/>
+      </slice>
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* Automatically Generated Code */&#xA;&#xA;using System;&#xA;using br.ufc.pargo.hpe.backend.DGAC;&#xA;using br.ufc.pargo.hpe.basic;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.PartnerKind;&#xA;using br.ufc.mdcc.hpc.storm.binding.channel.Binding;&#xA;&#xA;namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A { &#xA;&#xA;public abstract class BaseIChannelLImpl&lt;PKL>: Synchronizer, BaseIChannelL&lt;PKL>&#xA;where PKL:IPartnerKind&#xA;{&#xA;&#xA;private PKL partner_kind_left = default(PKL);&#xA;&#xA;protected PKL Partner_kind_left {&#xA;&#x9;get {&#xA;&#x9;&#x9;if (this.partner_kind_left == null)&#xA;&#x9;&#x9;&#x9;this.partner_kind_left = (PKL) Services.getPort(&quot;partner_kind_left&quot;);&#xA;&#x9;&#x9;return this.partner_kind_left;&#xA;&#x9;}&#xA;}&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;}&#xA;" fileType="library" name="BaseIChannelLImpl.cs" srcType="base" uri="br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/bin/1.0.0.0/BaseIChannelLImpl.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IPartnerKind.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.storm.binding.channel.Binding/bin/1.0.0.0/BaseIChannelL.dll</dependency>
+        </file>
+        <file contents="using System;&#xA;using br.ufc.pargo.hpe.backend.DGAC;&#xA;using br.ufc.pargo.hpe.basic;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.PartnerKind;&#xA;using br.ufc.mdcc.hpc.storm.binding.channel.Binding;&#xA;&#xA;namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A { &#xA;&#xA;public class IChannelLImpl&lt;PKL> : BaseIChannelLImpl&lt;PKL>, IChannelL&lt;PKL>&#xA;where PKL:IPartnerKind&#xA;{&#xA;&#xA;public IChannelLImpl() { &#xA;&#xA;} &#xA;&#xA;public override void main() { &#xA;&#xA;}&#xA;&#xA;}&#xA;&#xA;}&#xA;" fileType="library" name="IChannelLImpl.cs" srcType="user" uri="br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/bin/1.0.0.0/IChannelLImpl.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IPartnerKind.dll</dependency>
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/bin/1.0.0.0/BaseIChannelLImpl.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.storm.binding.channel.Binding/bin/1.0.0.0/IChannelL.dll</dependency>
+        </file>
+      </sources>
+      <visualDescription h="40" w="115" x="78" y="131">
+        <color b="8" g="233" r="133"/>
+      </visualDescription>
+      <parameter iname="IPartnerKindComponent" order="0" parid="partner_kind_left" uname="partner_kind" varid="PKL"/>
+      <action id="main">
+        <protocol/>
+      </action>
+    </interface>
+    <interface iRef="IChannelRImpl" nArgs="1">
+      <slice isRef="partner_kind_right">
+        <originRef cRef="partner_kind_right" iRef="IPartnerKind"/>
+        <visualDescription h="10" w="10" x="45" y="21"/>
+      </slice>
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* Automatically Generated Code */&#xA;&#xA;using System;&#xA;using br.ufc.pargo.hpe.backend.DGAC;&#xA;using br.ufc.pargo.hpe.basic;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.PartnerKind;&#xA;using br.ufc.mdcc.hpc.storm.binding.channel.Binding;&#xA;&#xA;namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A { &#xA;&#xA;public abstract class BaseIChannelRImpl&lt;PKR>: Synchronizer, BaseIChannelR&lt;PKR>&#xA;where PKR:IPartnerKind&#xA;{&#xA;&#xA;private PKR partner_kind_right = default(PKR);&#xA;&#xA;protected PKR Partner_kind_right {&#xA;&#x9;get {&#xA;&#x9;&#x9;if (this.partner_kind_right == null)&#xA;&#x9;&#x9;&#x9;this.partner_kind_right = (PKR) Services.getPort(&quot;partner_kind_right&quot;);&#xA;&#x9;&#x9;return this.partner_kind_right;&#xA;&#x9;}&#xA;}&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;}&#xA;" fileType="library" name="BaseIChannelRImpl.cs" srcType="base" uri="br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/bin/1.0.0.0/BaseIChannelRImpl.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IPartnerKind.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.storm.binding.channel.Binding/bin/1.0.0.0/BaseIChannelR.dll</dependency>
+        </file>
+        <file contents="using System;&#xA;using br.ufc.pargo.hpe.backend.DGAC;&#xA;using br.ufc.pargo.hpe.basic;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.PartnerKind;&#xA;using br.ufc.mdcc.hpc.storm.binding.channel.Binding;&#xA;&#xA;namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A { &#xA;&#xA;public class IChannelRImpl&lt;PKR> : BaseIChannelRImpl&lt;PKR>, IChannelR&lt;PKR>&#xA;where PKR:IPartnerKind&#xA;{&#xA;&#xA;public IChannelRImpl() { &#xA;&#xA;} &#xA;&#xA;public override void main() { &#xA;&#xA;}&#xA;&#xA;}&#xA;&#xA;}&#xA;" fileType="library" name="IChannelRImpl.cs" srcType="user" uri="br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/bin/1.0.0.0/IChannelRImpl.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IPartnerKind.dll</dependency>
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A/bin/1.0.0.0/BaseIChannelRImpl.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.storm.binding.channel.Binding/bin/1.0.0.0/IChannelR.dll</dependency>
+        </file>
+      </sources>
+      <visualDescription h="72" w="125" x="293" y="92">
+        <color b="0" g="165" r="255"/>
+      </visualDescription>
+      <parameter iname="IPartnerKindComponent" order="0" parid="partner_kind_right" uname="partner_kind" varid="PKR"/>
+      <action id="main">
+        <protocol/>
+      </action>
+    </interface>
+    <unit facet="0" iRef="IChannelLImpl" multiple="true" private="false" replica="0" uRef="channelL" visibleInterface="true">
+      <super cRef="base" uRef="channelL"/>
+      <visualDescription h="40" w="115" x="59" y="241"/>
+    </unit>
+    <unit facet="0" iRef="IChannelRImpl" multiple="true" private="false" replica="0" uRef="channelR" visibleInterface="true">
+      <super cRef="base" uRef="channelR"/>
+      <visualDescription h="40" w="125" x="322" y="234"/>
+    </unit>
+  </componentInfo>
+</component:component>
