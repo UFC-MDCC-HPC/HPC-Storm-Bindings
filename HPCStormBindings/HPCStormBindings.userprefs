@@ -1,0 +1,27 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImpl1NACI/src/1.0.0.0/BaseIPartnerLImpl.cs">
+    <Files>
+      <File FileName="../br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplA2C/src/1.0.0.0/IChannel1ImplA2C.cs" Line="1" Column="1" />
+      <File FileName="../br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/src/1.0.0.0/IPartnerKind.cs" Line="1" Column="1" />
+      <File FileName="../br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/src/1.0.0.0/BaseIPartnerKind.cs" Line="1" Column="1" />
+      <File FileName="../br.ufc.mdcc.hpc.storm.binding.channel.Binding/src/1.0.0.0/BaseIChannelL.cs" Line="1" Column="1" />
+      <File FileName="../br.ufc.mdcc.hpc.storm.binding.channel.Binding/src/1.0.0.0/BaseIChannelR.cs" Line="1" Column="1" />
+      <File FileName="../br.ufc.mdcc.hpc.storm.binding.channel.Binding/src/1.0.0.0/Intercommunicator.cs" Line="1" Column="1" />
+      <File FileName="../br.ufc.mdcc.hpc.storm.binding.channel.Binding/src/1.0.0.0/Status.cs" Line="1" Column="1" />
+      <File FileName="../br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C/src/1.0.0.0/BaseIProviderA2C.cs" Line="8" Column="37" />
+      <File FileName="../br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImpl1NACI/src/1.0.0.0/BaseIPartnerLImpl.cs" Line="8" Column="19" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True" selected="True">
+          <Node name="HPCStormBindings" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

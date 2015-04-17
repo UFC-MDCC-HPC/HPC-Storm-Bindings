@@ -1,0 +1,110 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HPCStormBindings", "HPCStormBindings\HPCStormBindings.csproj", "{2D344144-6EBC-4A43-AEDA-8E0242370040}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.action.Binding", "..\br.ufc.mdcc.hpc.storm.binding.action.Binding\br.ufc.mdcc.hpc.storm.binding.action.Binding\br.ufc.mdcc.hpc.storm.binding.action.Binding.csproj", "{B24C2586-3ADF-4817-8BA2-E50DDA597831}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.enviroment.Binding", "..\br.ufc.mdcc.hpc.storm.binding.enviroment.Binding\br.ufc.mdcc.hpc.storm.binding.enviroment.Binding\br.ufc.mdcc.hpc.storm.binding.enviroment.Binding.csproj", "{62C17DBA-7EC2-4A32-895E-7672D682FF63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.context.Protocol", "..\br.ufc.mdcc.hpc.storm.binding.context.Protocol\br.ufc.mdcc.hpc.storm.binding.context.Protocol\br.ufc.mdcc.hpc.storm.binding.context.Protocol.csproj", "{B6D0F0A7-267E-486D-A130-DAF3A24CA517}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.context.PartnerKind", "..\br.ufc.mdcc.hpc.storm.binding.context.PartnerKind\br.ufc.mdcc.hpc.storm.binding.context.PartnerKind\br.ufc.mdcc.hpc.storm.binding.context.PartnerKind.csproj", "{CE63E9CF-88BE-4143-BA6F-E555C742E877}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C", "..\br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C\br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C\br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C.csproj", "{36B510D0-5392-4ACA-89C2-EB2347B684A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.context.partner_kind.C2A", "..\br.ufc.mdcc.hpc.storm.binding.context.partner_kind.C2A\br.ufc.mdcc.hpc.storm.binding.context.partner_kind.C2A\br.ufc.mdcc.hpc.storm.binding.context.partner_kind.C2A.csproj", "{C2CBDD94-0679-44DE-A82A-917BF587FAC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.context.partner_kind.C2C", "..\br.ufc.mdcc.hpc.storm.binding.context.partner_kind.C2C\br.ufc.mdcc.hpc.storm.binding.context.partner_kind.C2C\br.ufc.mdcc.hpc.storm.binding.context.partner_kind.C2C.csproj", "{352B6EA6-1CF3-4C13-9D22-0511366E7160}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.channel.Binding", "..\br.ufc.mdcc.hpc.storm.binding.channel.Binding\br.ufc.mdcc.hpc.storm.binding.channel.Binding\br.ufc.mdcc.hpc.storm.binding.channel.Binding.csproj", "{40488558-F21F-4863-A466-15F96A6CD131}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplA2C", "..\br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplA2C\br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplA2C\br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplA2C.csproj", "{45417150-CDE1-46F0-9463-4FA5D6F30923}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A", "..\br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A\br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A\br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A.csproj", "{941CA593-5568-457A-9CD0-36D4D0B0E68E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C", "..\br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C\br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C\br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C.csproj", "{DCAFFC96-6C87-4A62-8248-5F3ED81BDEB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImpl1NACI", "..\br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImpl1NACI\br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImpl1NACI\br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImpl1NACI.csproj", "{C61E9C41-44FD-4C7E-A3A8-082B1462A275}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImplMNCCD", "..\br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImplMNCCD\br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImplMNCCD\br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImplMNCCD.csproj", "{F8287D19-1FF6-4E4B-A711-02E23AD6BADE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpe.storm.binding.context.PartnerKindApplication", "..\br.ufc.mdcc.hpe.storm.binding.context.PartnerKindApplication\br.ufc.mdcc.hpe.storm.binding.context.PartnerKindApplication\br.ufc.mdcc.hpe.storm.binding.context.PartnerKindApplication.csproj", "{CC615D74-992F-4BCD-8926-AFB3F1C8301E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent", "..\br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent\br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent\br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent.csproj", "{53D1C19B-E64C-4D09-BA8B-C45C12AC3BF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D344144-6EBC-4A43-AEDA-8E0242370040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D344144-6EBC-4A43-AEDA-8E0242370040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D344144-6EBC-4A43-AEDA-8E0242370040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D344144-6EBC-4A43-AEDA-8E0242370040}.Release|Any CPU.Build.0 = Release|Any CPU
+		{352B6EA6-1CF3-4C13-9D22-0511366E7160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{352B6EA6-1CF3-4C13-9D22-0511366E7160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{352B6EA6-1CF3-4C13-9D22-0511366E7160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{352B6EA6-1CF3-4C13-9D22-0511366E7160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36B510D0-5392-4ACA-89C2-EB2347B684A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36B510D0-5392-4ACA-89C2-EB2347B684A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36B510D0-5392-4ACA-89C2-EB2347B684A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36B510D0-5392-4ACA-89C2-EB2347B684A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40488558-F21F-4863-A466-15F96A6CD131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40488558-F21F-4863-A466-15F96A6CD131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40488558-F21F-4863-A466-15F96A6CD131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40488558-F21F-4863-A466-15F96A6CD131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45417150-CDE1-46F0-9463-4FA5D6F30923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45417150-CDE1-46F0-9463-4FA5D6F30923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45417150-CDE1-46F0-9463-4FA5D6F30923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45417150-CDE1-46F0-9463-4FA5D6F30923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53D1C19B-E64C-4D09-BA8B-C45C12AC3BF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53D1C19B-E64C-4D09-BA8B-C45C12AC3BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53D1C19B-E64C-4D09-BA8B-C45C12AC3BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53D1C19B-E64C-4D09-BA8B-C45C12AC3BF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62C17DBA-7EC2-4A32-895E-7672D682FF63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62C17DBA-7EC2-4A32-895E-7672D682FF63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62C17DBA-7EC2-4A32-895E-7672D682FF63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62C17DBA-7EC2-4A32-895E-7672D682FF63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{941CA593-5568-457A-9CD0-36D4D0B0E68E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{941CA593-5568-457A-9CD0-36D4D0B0E68E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{941CA593-5568-457A-9CD0-36D4D0B0E68E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{941CA593-5568-457A-9CD0-36D4D0B0E68E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B24C2586-3ADF-4817-8BA2-E50DDA597831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B24C2586-3ADF-4817-8BA2-E50DDA597831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B24C2586-3ADF-4817-8BA2-E50DDA597831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B24C2586-3ADF-4817-8BA2-E50DDA597831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6D0F0A7-267E-486D-A130-DAF3A24CA517}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6D0F0A7-267E-486D-A130-DAF3A24CA517}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6D0F0A7-267E-486D-A130-DAF3A24CA517}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6D0F0A7-267E-486D-A130-DAF3A24CA517}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2CBDD94-0679-44DE-A82A-917BF587FAC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2CBDD94-0679-44DE-A82A-917BF587FAC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2CBDD94-0679-44DE-A82A-917BF587FAC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2CBDD94-0679-44DE-A82A-917BF587FAC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C61E9C41-44FD-4C7E-A3A8-082B1462A275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C61E9C41-44FD-4C7E-A3A8-082B1462A275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C61E9C41-44FD-4C7E-A3A8-082B1462A275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C61E9C41-44FD-4C7E-A3A8-082B1462A275}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC615D74-992F-4BCD-8926-AFB3F1C8301E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC615D74-992F-4BCD-8926-AFB3F1C8301E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC615D74-992F-4BCD-8926-AFB3F1C8301E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC615D74-992F-4BCD-8926-AFB3F1C8301E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE63E9CF-88BE-4143-BA6F-E555C742E877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE63E9CF-88BE-4143-BA6F-E555C742E877}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE63E9CF-88BE-4143-BA6F-E555C742E877}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE63E9CF-88BE-4143-BA6F-E555C742E877}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCAFFC96-6C87-4A62-8248-5F3ED81BDEB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCAFFC96-6C87-4A62-8248-5F3ED81BDEB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCAFFC96-6C87-4A62-8248-5F3ED81BDEB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCAFFC96-6C87-4A62-8248-5F3ED81BDEB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8287D19-1FF6-4E4B-A711-02E23AD6BADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8287D19-1FF6-4E4B-A711-02E23AD6BADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8287D19-1FF6-4E4B-A711-02E23AD6BADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8287D19-1FF6-4E4B-A711-02E23AD6BADE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = HPCStormBindings\HPCStormBindings.csproj
+	EndGlobalSection
+EndGlobal
