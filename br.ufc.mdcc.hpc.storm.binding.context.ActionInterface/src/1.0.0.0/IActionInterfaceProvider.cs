@@ -1,11 +1,12 @@
 using br.ufc.pargo.hpe.kinds;
 
-namespace br.ufc.mdcc.hpc.storm.binding.context.ActionInterface { 
+namespace br.ufc.mdcc.hpc.storm.binding.context.ActionInterface 
+{ 
+	public interface IActionInterfaceProvider : BaseIActionInterfaceProvider
+	{
+		// returns the list of actions.
+		string[] Actions { get; }
 
-public interface IActionInterfaceProvider : BaseIActionInterfaceProvider
-{
-
-
-} // end main interface 
+	} // end main interface 
 
 } // end namespace 
