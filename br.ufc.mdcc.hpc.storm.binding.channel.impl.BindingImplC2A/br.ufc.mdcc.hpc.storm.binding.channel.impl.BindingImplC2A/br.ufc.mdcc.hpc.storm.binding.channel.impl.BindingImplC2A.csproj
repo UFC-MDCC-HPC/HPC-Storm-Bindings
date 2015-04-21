@@ -34,22 +34,22 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="DGAC">
-      <HintPath>..\..\..\..\..\..\usr\lib\mono\DGAC\DGAC.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\usr\lib\mono\DGAC\DGAC.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\src\1.0.0.0\BaseIChannelLImpl.cs">
+      <Link>BaseIChannelLImpl.cs</Link>
+    </Compile>
     <Compile Include="..\src\1.0.0.0\BaseIChannelRImpl.cs">
       <Link>BaseIChannelRImpl.cs</Link>
     </Compile>
+    <Compile Include="..\src\1.0.0.0\IChannelLImpl.cs">
+      <Link>IChannelLImpl.cs</Link>
+    </Compile>
     <Compile Include="..\src\1.0.0.0\IChannelRImpl.cs">
       <Link>IChannelRImpl.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\workspace_binding_storm\br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A\src\1.0.0.0\BaseIChannelLImpl.cs">
-      <Link>BaseIChannelLImpl.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\workspace_binding_storm\br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2A\src\1.0.0.0\IChannelLImpl.cs">
-      <Link>IChannelLImpl.cs</Link>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
