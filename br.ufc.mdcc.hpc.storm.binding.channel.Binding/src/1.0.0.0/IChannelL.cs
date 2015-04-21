@@ -3,7 +3,7 @@ using br.ufc.mdcc.hpc.storm.binding.context.PartnerKind;
 
 namespace br.ufc.mdcc.hpc.storm.binding.channel.Binding { 
 
-public interface IChannelL<PKL> : BaseIChannelL<PKL>
+public interface IChannelL<PKL> : BaseIChannelL<PKL>, Intercommunicator
 where PKL:IPartnerKind
 {
 

@@ -10,31 +10,33 @@
     <parameter componentRef="intermediation_protocol" formFieldId="intermediation_protocol" order="1" varName="IP"/>
     <parameter componentRef="partner_kind_user" formFieldId="partner_kind_user" order="1" varName="PKUser"/>
     <parameter componentRef="partner_kind_provider" formFieldId="partner_kind_provider" order="2" varName="PKProvider"/>
+    <parameter componentRef="user_interface" formFieldId="user_interface" order="2" varName="UI"/>
+    <parameter componentRef="provider_interface" formFieldId="provider_interface" order="3" varName="PI"/>
     <innerComponent hash_component_UID="00240000048000009400000006020000002400005253413100040000110000000d4feac7b8777b0d280c3a70a9b24113cf2c43308e1b64e8c846579efcd94ceba6f30d14448296fafcf78820710c63ea86a165910d6bd1b65acd39039aed3d799a9864c0c8165792cfc1f6ceeb3de99b761fc850c81edb0eaccb93b3c1cbaa30f1a0782455e3746019db795e8b7b813bccb2d924501a0eba58148c215b37949b" localRef="intermediation_protocol" location="br.ufc.mdcc.hpc.storm.binding.context.Protocol/Protocol.hpe" multiple="false" name="Protocol" package="br.ufc.mdcc.hpc.storm.binding.context" parameter_id="intermediation_protocol" exposed="false">
-      <visualDescription h="60" w="249" x="217" y="450">
+      <visualDescription h="60" w="249" x="191" y="442">
         <color b="255" g="255" r="255"/>
       </visualDescription>
       <unitBounds parallel="true" uRef="user_protocol">
-        <visualDescription h="20" w="20" x="5" y="2"/>
+        <visualDescription h="20" w="20" x="7" y="18"/>
       </unitBounds>
       <unitBounds parallel="true" uRef="provider_protocol">
-        <visualDescription h="20" w="20" x="28" y="2"/>
+        <visualDescription h="20" w="20" x="207" y="21"/>
       </unitBounds>
     </innerComponent>
     <innerComponent hash_component_UID="00240000048000009400000006020000002400005253413100040000110000009774998f569ea1fa2d53e1954afa255f33267bb8dd768cb5d1f46c0d81bfb0a50aad6c990e505bfb0cb18616b7648f8d6660308207f73b37a738640416bd7dee6c98574f7ea1b21fae4ca78cfa76d80daedf5decdadb2f205e1f557981860345aea67929244dd910b5ac8e542e31c87b26288a2ac32672d45afbb813b7a89480" localRef="partner_kind_user" location="br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/PartnerKind.hpe" multiple="false" name="PartnerKind" package="br.ufc.mdcc.hpc.storm.binding.context" parameter_id="partner_kind_user" exposed="false">
-      <visualDescription h="60" w="155" x="73" y="308">
+      <visualDescription h="60" w="155" x="20" y="374">
         <color b="255" g="255" r="255"/>
       </visualDescription>
       <unitBounds parallel="true" uRef="partner_kind">
-        <visualDescription h="20" w="20" x="5" y="2"/>
+        <visualDescription h="20" w="20" x="57" y="4"/>
       </unitBounds>
     </innerComponent>
     <innerComponent hash_component_UID="00240000048000009400000006020000002400005253413100040000110000009774998f569ea1fa2d53e1954afa255f33267bb8dd768cb5d1f46c0d81bfb0a50aad6c990e505bfb0cb18616b7648f8d6660308207f73b37a738640416bd7dee6c98574f7ea1b21fae4ca78cfa76d80daedf5decdadb2f205e1f557981860345aea67929244dd910b5ac8e542e31c87b26288a2ac32672d45afbb813b7a89480" localRef="partner_kind_provider" location="br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/PartnerKind.hpe" multiple="false" name="PartnerKind" package="br.ufc.mdcc.hpc.storm.binding.context" parameter_id="partner_kind_provider" exposed="false">
-      <visualDescription h="60" w="195" x="322" y="375">
+      <visualDescription h="60" w="195" x="394" y="334">
         <color b="255" g="255" r="255"/>
       </visualDescription>
       <unitBounds parallel="true" uRef="partner_kind">
-        <visualDescription h="20" w="20" x="5" y="2"/>
+        <visualDescription h="20" w="20" x="83" y="5"/>
       </unitBounds>
     </innerComponent>
     <innerComponent hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000174170214ec8de902f58c9e2758714817ff949c0c098fc0bb0d7f68cfab78767e1a0c1983242dfd742d7e3732d9050312c8c95d9130a7071b3ccddfe9b59fd7b8df6676b7b12a4a3f7e1fdad77bdaeb4396d673feddeaf3545c105ba8114bc03f067758555bf72db629d435bfeae77bbb9a77a0690d7415de49fea886da17dd1" localRef="channel" location="br.ufc.mdcc.hpc.storm.binding.channel.Binding/Binding.hpe" multiple="false" name="Binding" package="br.ufc.mdcc.hpc.storm.binding.channel" exposed="false">
@@ -50,7 +52,23 @@
         <visualDescription h="20" w="20" x="91" y="20"/>
       </unitBounds>
     </innerComponent>
-    <interface iRef="IUser" nArgs="2">
+    <innerComponent hash_component_UID="00240000048000009400000006020000002400005253413100040000110000001376f8fb9573ff04eafdf75290619f6a62a41c1fafa6f263c5f6840ca24ce77c8ca401b60cfcf16e3fb7c1964497c1ae39631ef602cd28ef465a365385be366e2d1e701b118f417a85ae19a4ff4570839a3d2d29065780c53fa5d889f14c6b6be757a3f5b8f4d655de0ad0f4b57d4eec7f6c7433855520e958d453279b75fc88" localRef="user_interface" location="br.ufc.mdcc.hpc.storm.binding.context.EnvironmentInterface/EnvironmentInterface.hpe" multiple="false" name="EnvironmentInterface" package="br.ufc.mdcc.hpc.storm.binding.context" parameter_id="user_interface" exposed="false">
+      <visualDescription h="60" w="150" x="105" y="39">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds parallel="true" uRef="environment_interface">
+        <visualDescription h="20" w="20" x="66" y="35"/>
+      </unitBounds>
+    </innerComponent>
+    <innerComponent hash_component_UID="00240000048000009400000006020000002400005253413100040000110000001376f8fb9573ff04eafdf75290619f6a62a41c1fafa6f263c5f6840ca24ce77c8ca401b60cfcf16e3fb7c1964497c1ae39631ef602cd28ef465a365385be366e2d1e701b118f417a85ae19a4ff4570839a3d2d29065780c53fa5d889f14c6b6be757a3f5b8f4d655de0ad0f4b57d4eec7f6c7433855520e958d453279b75fc88" localRef="provider_interface" location="br.ufc.mdcc.hpc.storm.binding.context.EnvironmentInterface/EnvironmentInterface.hpe" multiple="false" name="EnvironmentInterface" package="br.ufc.mdcc.hpc.storm.binding.context" parameter_id="provider_interface" exposed="false">
+      <visualDescription h="63" w="159" x="283" y="35">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds parallel="true" uRef="environment_interface">
+        <visualDescription h="20" w="20" x="77" y="41"/>
+      </unitBounds>
+    </innerComponent>
+    <interface iRef="IUser" nArgs="3">
       <slice isRef="intermediation_protocol">
         <originRef cRef="intermediation_protocol" iRef="IUserProtocol"/>
         <visualDescription h="10" w="10" x="60" y="27"/>
@@ -63,27 +81,34 @@
         <originRef cRef="channel" iRef="IChannelL"/>
         <visualDescription h="10" w="10" x="22" y="22"/>
       </slice>
+      <slice isRef="user_interface">
+        <originRef cRef="user_interface" iRef="IEnvironmentInterface"/>
+        <visualDescription h="10" w="10" x="3" y="8"/>
+      </slice>
       <sources sourceType="C# Language" versionId="1.0.0.0">
-        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.Protocol;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.PartnerKind;&#xA;&#xA;namespace br.ufc.mdcc.hpc.storm.binding.enviroment.Binding { &#xA;&#xA;public interface BaseIUser&lt;IP, PKUser> : ISynchronizerKind &#xA;where IP:IUserProtocol&#xA;where PKUser:IPartnerKind&#xA;{&#xA;&#xA;&#xA;&#xA;} // end main interface &#xA;&#xA;} // end namespace &#xA;" fileType="library" name="BaseIUser.cs" srcType="base" uri="br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/BaseIUser.dll" versionId="1.0.0.0">
-          <dependency>br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IUserPartnerKind.dll</dependency>
+        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.Protocol;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.PartnerKind;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.EnvironmentInterface;&#xA;&#xA;namespace br.ufc.mdcc.hpc.storm.binding.enviroment.Binding { &#xA;&#xA;public interface BaseIUser&lt;IP, PKUser, UI> : ISynchronizerKind &#xA;where IP:IUserProtocol&#xA;where PKUser:IPartnerKind&#xA;where UI:IEnvironmentInterface&#xA;{&#xA;&#xA;&#xA;&#xA;} // end main interface &#xA;&#xA;} // end namespace &#xA;" fileType="library" name="BaseIUser.cs" srcType="base" uri="br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/BaseIUser.dll" versionId="1.0.0.0">
           <dependency>br.ufc.mdcc.hpc.storm.binding.context.Protocol/bin/1.0.0.0/IUserProtocol.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IPartnerKind.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.storm.binding.context.EnvironmentInterface/bin/1.0.0.0/IEnvironmentInterface.dll</dependency>
         </file>
-        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.Protocol;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.PartnerKind;&#xA;&#xA;namespace br.ufc.mdcc.hpc.storm.binding.enviroment.Binding { &#xA;&#xA;public interface IUser&lt;IP, PKUser> : BaseIUser&lt;IP, PKUser>&#xA;where IP:IUserProtocol&#xA;where PKUser:IPartnerKind&#xA;{&#xA;&#xA;&#xA;} // end main interface &#xA;&#xA;} // end namespace &#xA;" fileType="library" name="IUser.cs" srcType="user" uri="br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/IUser.dll" versionId="1.0.0.0">
-          <dependency>br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IUserPartnerKind.dll</dependency>
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.Protocol;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.PartnerKind;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.EnvironmentInterface;&#xA;&#xA;namespace br.ufc.mdcc.hpc.storm.binding.enviroment.Binding { &#xA;&#xA;public interface IUser&lt;IP, PKUser, UI> : BaseIUser&lt;IP, PKUser, UI>&#xA;where IP:IUserProtocol&#xA;where PKUser:IPartnerKind&#xA;where UI:IEnvironmentInterface&#xA;{&#xA;&#xA;&#xA;} // end main interface &#xA;&#xA;} // end namespace &#xA;" fileType="library" name="IUser.cs" srcType="user" uri="br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/IUser.dll" versionId="1.0.0.0">
           <dependency>br.ufc.mdcc.hpc.storm.binding.context.Protocol/bin/1.0.0.0/IUserProtocol.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IPartnerKind.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.storm.binding.context.EnvironmentInterface/bin/1.0.0.0/IEnvironmentInterface.dll</dependency>
           <dependency>%WORKSPACE/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/BaseIUser.dll</dependency>
         </file>
       </sources>
-      <visualDescription h="40" w="80" x="100" y="121">
+      <visualDescription h="40" w="80" x="212" y="135">
         <color b="255" g="144" r="30"/>
       </visualDescription>
       <parameter iname="IUserProtocol" parid="intermediation_protocol" uname="user_protocol" varid="IP"/>
       <parameter iname="IPartnerKind" order="0" parid="partner_kind_user" uname="partner_kind" varid="PKUser"/>
+      <parameter iname="IEnvironmentInterface" order="1" parid="user_interface" uname="environment_interface" varid="UI"/>
       <action id="main">
         <protocol/>
       </action>
     </interface>
-    <interface iRef="IProvider" nArgs="2">
+    <interface iRef="IProvider" nArgs="3">
       <slice isRef="intermediation_protocol">
         <originRef cRef="intermediation_protocol" iRef="IProviderProtocol"/>
         <visualDescription h="10" w="10" x="45" y="24"/>
@@ -96,22 +121,29 @@
         <originRef cRef="channel" iRef="IChannelR"/>
         <visualDescription h="10" w="10" x="24" y="27"/>
       </slice>
+      <slice isRef="provider_interface">
+        <originRef cRef="provider_interface" iRef="IEnvironmentInterface"/>
+        <visualDescription h="10" w="10" x="5" y="9"/>
+      </slice>
       <sources sourceType="C# Language" versionId="1.0.0.0">
-        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.Protocol;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.PartnerKind;&#xA;&#xA;namespace br.ufc.mdcc.hpc.storm.binding.enviroment.Binding { &#xA;&#xA;public interface BaseIProvider&lt;IP, PKProvider> : ISynchronizerKind &#xA;where IP:IProviderProtocol&#xA;where PKProvider:IPartnerKind&#xA;{&#xA;&#xA;&#xA;&#xA;} // end main interface &#xA;&#xA;} // end namespace &#xA;" fileType="library" name="BaseIProvider.cs" srcType="base" uri="br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/BaseIProvider.dll" versionId="1.0.0.0">
-          <dependency>br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IProviderPartnerKind.dll</dependency>
+        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.Protocol;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.PartnerKind;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.EnvironmentInterface;&#xA;&#xA;namespace br.ufc.mdcc.hpc.storm.binding.enviroment.Binding { &#xA;&#xA;public interface BaseIProvider&lt;IP, PKProvider, PI> : ISynchronizerKind &#xA;where IP:IProviderProtocol&#xA;where PKProvider:IPartnerKind&#xA;where PI:IEnvironmentInterface&#xA;{&#xA;&#xA;&#xA;&#xA;} // end main interface &#xA;&#xA;} // end namespace &#xA;" fileType="library" name="BaseIProvider.cs" srcType="base" uri="br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/BaseIProvider.dll" versionId="1.0.0.0">
           <dependency>br.ufc.mdcc.hpc.storm.binding.context.Protocol/bin/1.0.0.0/IProviderProtocol.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IPartnerKind.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.storm.binding.context.EnvironmentInterface/bin/1.0.0.0/IEnvironmentInterface.dll</dependency>
         </file>
-        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.Protocol;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.PartnerKind;&#xA;&#xA;namespace br.ufc.mdcc.hpc.storm.binding.enviroment.Binding { &#xA;&#xA;public interface IProvider&lt;IP, PKProvider> : BaseIProvider&lt;IP, PKProvider>&#xA;where IP:IProviderProtocol&#xA;where PKProvider:IPartnerKind&#xA;{&#xA;&#xA;&#xA;} // end main interface &#xA;&#xA;} // end namespace &#xA;" fileType="library" name="IProvider.cs" srcType="user" uri="br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/IProvider.dll" versionId="1.0.0.0">
-          <dependency>br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IProviderPartnerKind.dll</dependency>
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.Protocol;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.PartnerKind;&#xA;using br.ufc.mdcc.hpc.storm.binding.context.EnvironmentInterface;&#xA;&#xA;namespace br.ufc.mdcc.hpc.storm.binding.enviroment.Binding { &#xA;&#xA;public interface IProvider&lt;IP, PKProvider, PI> : BaseIProvider&lt;IP, PKProvider, PI>&#xA;where IP:IProviderProtocol&#xA;where PKProvider:IPartnerKind&#xA;where PI:IEnvironmentInterface&#xA;{&#xA;&#xA;&#xA;} // end main interface &#xA;&#xA;} // end namespace &#xA;" fileType="library" name="IProvider.cs" srcType="user" uri="br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/IProvider.dll" versionId="1.0.0.0">
           <dependency>br.ufc.mdcc.hpc.storm.binding.context.Protocol/bin/1.0.0.0/IProviderProtocol.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IPartnerKind.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.storm.binding.context.EnvironmentInterface/bin/1.0.0.0/IEnvironmentInterface.dll</dependency>
           <dependency>%WORKSPACE/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/BaseIProvider.dll</dependency>
         </file>
       </sources>
-      <visualDescription h="40" w="80" x="420" y="105">
+      <visualDescription h="40" w="80" x="301" y="144">
         <color b="26" g="26" r="242"/>
       </visualDescription>
       <parameter iname="IProviderProtocol" order="0" parid="intermediation_protocol" uname="provider_protocol" varid="IP"/>
       <parameter iname="IPartnerKind" order="1" parid="partner_kind_provider" uname="partner_kind" varid="PKProvider"/>
+      <parameter iname="IEnvironmentInterface" order="2" parid="provider_interface" uname="environment_interface" varid="PI"/>
       <action id="main">
         <protocol/>
       </action>
@@ -126,6 +158,9 @@
       <slices cRef="channel" inner_replica="0" slice_replica="0" uRef="channelL" sliceName="channel" transitive="false">
         <visualDescription h="10" w="10" x="22" y="22"/>
       </slices>
+      <slices cRef="user_interface" inner_replica="0" slice_replica="0" uRef="environment_interface" sliceName="user_interface" transitive="false">
+        <visualDescription h="10" w="10" x="3" y="8"/>
+      </slices>
       <visualDescription h="40" w="80" x="100" y="208"/>
     </unit>
     <unit facet="0" iRef="IProvider" multiple="true" private="false" replica="0" uRef="provider" visibleInterface="true">
@@ -137,6 +172,9 @@
       </slices>
       <slices cRef="channel" inner_replica="0" slice_replica="0" uRef="channelR" sliceName="channel" transitive="false">
         <visualDescription h="10" w="10" x="24" y="27"/>
+      </slices>
+      <slices cRef="provider_interface" inner_replica="0" slice_replica="0" uRef="environment_interface" sliceName="provider_interface" transitive="false">
+        <visualDescription h="10" w="10" x="5" y="9"/>
       </slices>
       <visualDescription h="40" w="80" x="420" y="185"/>
     </unit>

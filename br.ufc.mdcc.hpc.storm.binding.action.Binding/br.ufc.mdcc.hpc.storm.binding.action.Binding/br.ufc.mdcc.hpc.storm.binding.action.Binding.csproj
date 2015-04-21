@@ -51,12 +51,19 @@
     <Compile Include="..\src\1.0.0.0\IPartnerR.cs">
       <Link>IPartnerR.cs</Link>
     </Compile>
+    <Compile Include="..\src\1.0.0.0\TaskPort.cs">
+      <Link>TaskPort.cs</Link>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\..\br.ufc.mdcc.hpc.storm.binding.context.PartnerKind\br.ufc.mdcc.hpc.storm.binding.context.PartnerKind\br.ufc.mdcc.hpc.storm.binding.context.PartnerKind.csproj">
       <Project>{CE63E9CF-88BE-4143-BA6F-E555C742E877}</Project>
       <Name>br.ufc.mdcc.hpc.storm.binding.context.PartnerKind</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.storm.binding.context.ActionInterface\br.ufc.mdcc.hpc.storm.binding.context.ActionInterface\br.ufc.mdcc.hpc.storm.binding.context.ActionInterface.csproj">
+      <Project>{21B4B9EB-A3D6-476F-8116-E7E233DB7BEE}</Project>
+      <Name>br.ufc.mdcc.hpc.storm.binding.context.ActionInterface</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

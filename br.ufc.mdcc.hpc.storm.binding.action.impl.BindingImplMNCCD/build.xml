@@ -12,8 +12,9 @@
         <include name="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImplMNCCD/src/1.0.0.0/BaseIPartnerLImpl.cs"/>
       </sources>
       <references>
+        <include name="br.ufc.mdcc.hpc.storm.binding.context.ActionInterface/bin/1.0.0.0/IActionInterfaceProvider.dll"/>
         <include name="br.ufc.mdcc.hpc.storm.binding.channel.Binding/bin/1.0.0.0/IChannelL.dll"/>
-        <include name="br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent/bin/1.0.0.0/IPartnerKindComponent.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent/bin/1.0.0.0/IPartnerKindComponent.dll"/>
         <include name="br.ufc.mdcc.hpc.storm.binding.action.Binding/bin/1.0.0.0/BaseIPartnerL.dll"/>
         <include/>
       </references>
@@ -23,7 +24,8 @@
         <include name="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImplMNCCD/src/1.0.0.0/IPartnerLImpl.cs"/>
       </sources>
       <references>
-        <include name="br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent/bin/1.0.0.0/IPartnerKindComponent.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent/bin/1.0.0.0/IPartnerKindComponent.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.context.ActionInterface/bin/1.0.0.0/IActionInterfaceProvider.dll"/>
         <include name="/br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImplMNCCD/bin/1.0.0.0/BaseIPartnerLImpl.dll"/>
         <include name="br.ufc.mdcc.hpc.storm.binding.action.Binding/bin/1.0.0.0/IPartnerL.dll"/>
         <include/>
@@ -34,8 +36,9 @@
         <include name="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImplMNCCD/src/1.0.0.0/BaseIPartnerRImpl.cs"/>
       </sources>
       <references>
+        <include name="br.ufc.mdcc.hpc.storm.binding.context.ActionInterface/bin/1.0.0.0/IActionInterfaceProvider.dll"/>
         <include name="br.ufc.mdcc.hpc.storm.binding.channel.Binding/bin/1.0.0.0/IChannelR.dll"/>
-        <include name="br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent/bin/1.0.0.0/IPartnerKindComponent.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent/bin/1.0.0.0/IPartnerKindComponent.dll"/>
         <include name="br.ufc.mdcc.hpc.storm.binding.action.Binding/bin/1.0.0.0/BaseIPartnerR.dll"/>
         <include/>
       </references>
@@ -45,7 +48,8 @@
         <include name="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImplMNCCD/src/1.0.0.0/IPartnerRImpl.cs"/>
       </sources>
       <references>
-        <include name="br.ufc.mdcc.hpe.storm.binding.context.PartnerKindComponent/bin/1.0.0.0/IPartnerKindComponent.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent/bin/1.0.0.0/IPartnerKindComponent.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.context.ActionInterface/bin/1.0.0.0/IActionInterfaceProvider.dll"/>
         <include name="/br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImplMNCCD/bin/1.0.0.0/BaseIPartnerRImpl.dll"/>
         <include name="br.ufc.mdcc.hpc.storm.binding.action.Binding/bin/1.0.0.0/IPartnerR.dll"/>
         <include/>

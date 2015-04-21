@@ -33,12 +33,24 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.bindi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent", "..\br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent\br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent\br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent.csproj", "{53D1C19B-E64C-4D09-BA8B-C45C12AC3BF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.context.ActionInterface", "..\br.ufc.mdcc.hpc.storm.binding.context.ActionInterface\br.ufc.mdcc.hpc.storm.binding.context.ActionInterface\br.ufc.mdcc.hpc.storm.binding.context.ActionInterface.csproj", "{21B4B9EB-A3D6-476F-8116-E7E233DB7BEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.context.EnvironmentInterface", "..\br.ufc.mdcc.hpc.storm.binding.context.EnvironmentInterface\br.ufc.mdcc.hpc.storm.binding.context.EnvironmentInterface\br.ufc.mdcc.hpc.storm.binding.context.EnvironmentInterface.csproj", "{1E7211FF-4C2B-4A38-A7FC-D8905D88B308}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E7211FF-4C2B-4A38-A7FC-D8905D88B308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E7211FF-4C2B-4A38-A7FC-D8905D88B308}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E7211FF-4C2B-4A38-A7FC-D8905D88B308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E7211FF-4C2B-4A38-A7FC-D8905D88B308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21B4B9EB-A3D6-476F-8116-E7E233DB7BEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21B4B9EB-A3D6-476F-8116-E7E233DB7BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21B4B9EB-A3D6-476F-8116-E7E233DB7BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21B4B9EB-A3D6-476F-8116-E7E233DB7BEE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2D344144-6EBC-4A43-AEDA-8E0242370040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2D344144-6EBC-4A43-AEDA-8E0242370040}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D344144-6EBC-4A43-AEDA-8E0242370040}.Release|Any CPU.ActiveCfg = Release|Any CPU

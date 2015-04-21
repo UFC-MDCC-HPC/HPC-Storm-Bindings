@@ -62,5 +62,9 @@
       <Project>{B6D0F0A7-267E-486D-A130-DAF3A24CA517}</Project>
       <Name>br.ufc.mdcc.hpc.storm.binding.context.Protocol</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.storm.binding.context.EnvironmentInterface\br.ufc.mdcc.hpc.storm.binding.context.EnvironmentInterface\br.ufc.mdcc.hpc.storm.binding.context.EnvironmentInterface.csproj">
+      <Project>{1E7211FF-4C2B-4A38-A7FC-D8905D88B308}</Project>
+      <Name>br.ufc.mdcc.hpc.storm.binding.context.EnvironmentInterface</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

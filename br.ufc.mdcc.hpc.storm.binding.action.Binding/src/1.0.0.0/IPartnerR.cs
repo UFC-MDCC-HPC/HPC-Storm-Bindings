@@ -1,10 +1,12 @@
 using br.ufc.pargo.hpe.kinds;
 using br.ufc.mdcc.hpc.storm.binding.context.PartnerKind;
+using br.ufc.mdcc.hpc.storm.binding.context.ActionInterface;
 
 namespace br.ufc.mdcc.hpc.storm.binding.action.Binding { 
 
-public interface IPartnerR<PKR> : BaseIPartnerR<PKR>
+public interface IPartnerR<PKR, A> : BaseIPartnerR<PKR, A>, TaskPort
 where PKR:IPartnerKind
+where A:IActionInterfaceProvider
 {
 
 

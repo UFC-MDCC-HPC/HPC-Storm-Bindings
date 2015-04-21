@@ -70,5 +70,9 @@
       <Project>{53D1C19B-E64C-4D09-BA8B-C45C12AC3BF9}</Project>
       <Name>br.ufc.mdcc.hpc.storm.binding.context.PartnerKindComponent</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.storm.binding.context.ActionInterface\br.ufc.mdcc.hpc.storm.binding.context.ActionInterface\br.ufc.mdcc.hpc.storm.binding.context.ActionInterface.csproj">
+      <Project>{21B4B9EB-A3D6-476F-8116-E7E233DB7BEE}</Project>
+      <Name>br.ufc.mdcc.hpc.storm.binding.context.ActionInterface</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
