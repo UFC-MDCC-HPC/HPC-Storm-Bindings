@@ -10,7 +10,7 @@ using br.ufc.mdcc.hpc.storm.binding.channel.Binding;
 
 namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C { 
 
-public abstract class BaseIChannelRImpl<PKR>: Synchronizer, BaseIChannelR<PKR>
+	public abstract class BaseIChannelRImpl<PKR>: IntercommunicatorImpl, BaseIChannelR<PKR>
 where PKR:IPartnerKindComponent
 {
 
