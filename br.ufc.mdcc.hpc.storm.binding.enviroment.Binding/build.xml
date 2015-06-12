@@ -4,52 +4,57 @@
   <property name="build" value="bin"/>
   <property name="src" value="src"/>
   <target name="Binding-1.0.0.0">
-    <ifnot targetexists="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0">
-      <mkdir dir="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0"/>
+    <ifnot targetexists="/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0">
+      <mkdir dir="/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0"/>
     </ifnot>
-    <csc debug="true" keyfile="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/Binding.snk" optimize="true" output="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/BaseIUser.dll" target="library" unsafe="false">
+    <csc debug="true" keyfile="/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/Binding.snk" optimize="true" output="/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/BaseIRoot.dll" target="library" unsafe="false">
       <sources>
-        <include name="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/src/1.0.0.0/BaseIUser.cs"/>
+        <include name="/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/src/1.0.0.0/BaseIRoot.cs"/>
       </sources>
       <references>
-        <include name="br.ufc.mdcc.hpc.storm.binding.context.Protocol/bin/1.0.0.0/IUserProtocol.dll"/>
-        <include name="br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IPartnerKind.dll"/>
-        <include name="br.ufc.mdcc.hpc.storm.binding.context.EnvironmentInterface/bin/1.0.0.0/IEnvironmentInterfaceProvider.dll"/>
         <include/>
       </references>
     </csc>
-    <csc debug="true" keyfile="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/Binding.snk" optimize="true" output="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/IUser.dll" target="library" unsafe="false">
+    <csc debug="true" keyfile="/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/Binding.snk" optimize="true" output="/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/IRoot.dll" target="library" unsafe="false">
       <sources>
-        <include name="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/src/1.0.0.0/IUser.cs"/>
+        <include name="/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/src/1.0.0.0/IRoot.cs"/>
       </sources>
       <references>
-        <include name="br.ufc.mdcc.hpc.storm.binding.context.Protocol/bin/1.0.0.0/IUserProtocol.dll"/>
-        <include name="br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IPartnerKind.dll"/>
-        <include name="br.ufc.mdcc.hpc.storm.binding.context.EnvironmentInterface/bin/1.0.0.0/IEnvironmentInterfaceProvider.dll"/>
-        <include name="/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/BaseIUser.dll"/>
+        <include name="/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/BaseIRoot.dll"/>
         <include/>
       </references>
     </csc>
-    <csc debug="true" keyfile="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/Binding.snk" optimize="true" output="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/BaseIProvider.dll" target="library" unsafe="false">
+    <csc debug="true" keyfile="/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/Binding.snk" optimize="true" output="/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/BaseIPeerLeft.dll" target="library" unsafe="false">
       <sources>
-        <include name="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/src/1.0.0.0/BaseIProvider.cs"/>
+        <include name="/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/src/1.0.0.0/BaseIPeerLeft.cs"/>
       </sources>
       <references>
-        <include name="br.ufc.mdcc.hpc.storm.binding.context.Protocol/bin/1.0.0.0/IProviderProtocol.dll"/>
-        <include name="br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IPartnerKind.dll"/>
-        <include name="br.ufc.mdcc.hpc.storm.binding.context.EnvironmentInterface/bin/1.0.0.0/IEnvironmentInterfaceProvider.dll"/>
         <include/>
       </references>
     </csc>
-    <csc debug="true" keyfile="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/Binding.snk" optimize="true" output="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/IProvider.dll" target="library" unsafe="false">
+    <csc debug="true" keyfile="/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/Binding.snk" optimize="true" output="/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/IPeerLeft.dll" target="library" unsafe="false">
       <sources>
-        <include name="/home/heron/Copy/workspace_binding_storm/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/src/1.0.0.0/IProvider.cs"/>
+        <include name="/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/src/1.0.0.0/IPeerLeft.cs"/>
       </sources>
       <references>
-        <include name="br.ufc.mdcc.hpc.storm.binding.context.Protocol/bin/1.0.0.0/IProviderProtocol.dll"/>
-        <include name="br.ufc.mdcc.hpc.storm.binding.context.PartnerKind/bin/1.0.0.0/IPartnerKind.dll"/>
-        <include name="br.ufc.mdcc.hpc.storm.binding.context.EnvironmentInterface/bin/1.0.0.0/IEnvironmentInterfaceProvider.dll"/>
-        <include name="/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/BaseIProvider.dll"/>
+        <include name="/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/BaseIPeerLeft.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/Binding.snk" optimize="true" output="/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/BaseIPeerRight.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/src/1.0.0.0/BaseIPeerRight.cs"/>
+      </sources>
+      <references>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/Binding.snk" optimize="true" output="/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/IPeerRight.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/src/1.0.0.0/IPeerRight.cs"/>
+      </sources>
+      <references>
+        <include name="/br.ufc.mdcc.hpc.storm.binding.enviroment.Binding/bin/1.0.0.0/BaseIPeerRight.dll"/>
         <include/>
       </references>
     </csc>

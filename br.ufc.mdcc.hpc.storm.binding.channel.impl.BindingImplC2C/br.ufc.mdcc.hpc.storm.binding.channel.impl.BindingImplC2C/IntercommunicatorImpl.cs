@@ -4,7 +4,7 @@ using br.ufc.mdcc.hpc.storm.binding.channel.Binding;
 
 namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C
 {
-	public abstract class IntercommunicatorImpl : Synchronizer, Intercommunicator
+	public abstract class IntercommunicatorImpl : Synchronizer, Aliencommunicator
 	{
 		public const int Root = default(int);
 		public const int Null = default(int);
@@ -123,62 +123,62 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplC2C
 			throw new NotImplementedException ();
 		}
 
-		T[] Intercommunicator.Allgather<T> (T value)
+		T[] Aliencommunicator.Allgather<T> (T value)
 		{
 			throw new NotImplementedException ();
 		}
 
-		T Intercommunicator.Allreduce<T> (T value, ReductionOperation<T> op)
+		T Aliencommunicator.Allreduce<T> (T value, ReductionOperation<T> op)
 		{
 			throw new NotImplementedException ();
 		}
 
-		T[] Intercommunicator.Allreduce<T> (T[] values, ReductionOperation<T> op)
+		T[] Aliencommunicator.Allreduce<T> (T[] values, ReductionOperation<T> op)
 		{
 			throw new NotImplementedException ();
 		}
 
-		T[] Intercommunicator.Alltoall<T> (T[] values)
+		T[] Aliencommunicator.Alltoall<T> (T[] values)
 		{
 			throw new NotImplementedException ();
 		}
 
-		T[] Intercommunicator.ReduceScatter<T> (T[] values, ReductionOperation<T> op, int[] counts)
+		T[] Aliencommunicator.ReduceScatter<T> (T[] values, ReductionOperation<T> op, int[] counts)
 		{
 			throw new NotImplementedException ();
 		}
 
-		T Intercommunicator.Scatter<T> (int root)
+		T Aliencommunicator.Scatter<T> (int root)
 		{
 			throw new NotImplementedException ();
 		}
 
-		T[] Intercommunicator.Gather<T> (T value, int root)
+		T[] Aliencommunicator.Gather<T> (T value, int root)
 		{
 			throw new NotImplementedException ();
 		}
 
-		T[] Intercommunicator.Gather<T> (int root)
+		T[] Aliencommunicator.Gather<T> (int root)
 		{
 			throw new NotImplementedException ();
 		}
 
-		T[] Intercommunicator.GatherFlattened<T> (int count)
+		T[] Aliencommunicator.GatherFlattened<T> (int count)
 		{
 			throw new NotImplementedException ();
 		}
 
-		T[] Intercommunicator.GatherFlattened<T> (int[] counts)
+		T[] Aliencommunicator.GatherFlattened<T> (int[] counts)
 		{
 			throw new NotImplementedException ();
 		}
 
-		T Intercommunicator.Reduce<T> (T value, ReductionOperation<T> op, int root)
+		T Aliencommunicator.Reduce<T> (T value, ReductionOperation<T> op, int root)
 		{
 			throw new NotImplementedException ();
 		}
 
-		T[] Intercommunicator.Reduce<T> (T[] values, ReductionOperation<T> op, int root)
+		T[] Aliencommunicator.Reduce<T> (T[] values, ReductionOperation<T> op, int root)
 		{
 			throw new NotImplementedException ();
 		}

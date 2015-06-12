@@ -1,22 +1,19 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplA2C/src/1.0.0.0/IChannel1ImplA2C.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl/src/1.0.0.0/IChannelImpl.cs">
     <Files>
-      <File FileName="../br.ufc.mdcc.hpc.storm.binding.action.Binding/src/1.0.0.0/IPartnerR.cs" Line="1" Column="1" />
-      <File FileName="../br.ufc.mdcc.hpc.storm.binding.action.Binding/src/1.0.0.0/TaskPort.cs" Line="1" Column="1" />
-      <File FileName="../br.ufc.mdcc.hpc.storm.binding.action.Binding/src/1.0.0.0/IPartnerL.cs" Line="1" Column="1" />
-      <File FileName="../br.ufc.mdcc.hpc.storm.binding.action.impl.BindingImpl1NACI/src/1.0.0.0/IPartnerLImpl.cs" Line="1" Column="1" />
-      <File FileName="../br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C/src/1.0.0.0/BaseIProviderA2C.cs" Line="1" Column="1" />
-      <File FileName="../br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C/src/1.0.0.0/IUserA2C.cs" Line="1" Column="1" />
-      <File FileName="../br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplA2C/src/1.0.0.0/IChannel1ImplA2C.cs" Line="11" Column="10" />
+      <File FileName="../br.ufc.mdcc.hpc.storm.binding.channel.Binding/src/1.0.0.0/IChannel.cs" Line="12" Column="19" />
+      <File FileName="../br.ufc.mdcc.hpc.storm.binding.channel.Binding/src/1.0.0.0/Request.cs" Line="1" Column="1" />
+      <File FileName="../br.ufc.mdcc.hpc.storm.binding.channel.Binding/src/1.0.0.0/Status.cs" Line="1" Column="1" />
+      <File FileName="../br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl/src/1.0.0.0/IChannelImpl.cs" Line="16" Column="7" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImplA2C" expanded="True">
-            <Node name="IChannel1ImplA2C.cs" selected="True" />
+          <Node name="br.ufc.mdcc.hpc.storm.binding.channel.Binding" expanded="True" />
+          <Node name="br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl" expanded="True">
+            <Node name="IChannelImpl.cs" selected="True" />
           </Node>
-          <Node name="br.ufc.mdcc.hpc.storm.binding.context.partner_kind.A2C" expanded="True" />
         </State>
       </Pad>
     </Pads>
