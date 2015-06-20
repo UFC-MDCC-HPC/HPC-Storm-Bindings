@@ -41,6 +41,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.kind.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl", "..\br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl\br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl\br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl.csproj", "{7C4CD88A-478E-4463-8D06-9B23282D8003}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.task.TaskBinding", "..\br.ufc.mdcc.hpc.storm.binding.task.TaskBinding\br.ufc.mdcc.hpc.storm.binding.task.TaskBinding\br.ufc.mdcc.hpc.storm.binding.task.TaskBinding.csproj", "{71E4BB76-6EAD-4F96-88EF-6C9C861784CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.task.impl.TaskBindingImpl", "..\br.ufc.mdcc.hpc.storm.binding.task.impl.TaskBindingImpl\br.ufc.mdcc.hpc.storm.binding.task.impl.TaskBindingImpl\br.ufc.mdcc.hpc.storm.binding.task.impl.TaskBindingImpl.csproj", "{B178F70B-8C35-44CF-B1C9-A2545637E59E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +83,10 @@ Global
 		{62C17DBA-7EC2-4A32-895E-7672D682FF63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62C17DBA-7EC2-4A32-895E-7672D682FF63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62C17DBA-7EC2-4A32-895E-7672D682FF63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71E4BB76-6EAD-4F96-88EF-6C9C861784CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71E4BB76-6EAD-4F96-88EF-6C9C861784CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71E4BB76-6EAD-4F96-88EF-6C9C861784CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71E4BB76-6EAD-4F96-88EF-6C9C861784CE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{75954E48-9C52-4F6D-8947-13E9D574FBEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{75954E48-9C52-4F6D-8947-13E9D574FBEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75954E48-9C52-4F6D-8947-13E9D574FBEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -95,6 +103,10 @@ Global
 		{941CA593-5568-457A-9CD0-36D4D0B0E68E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{941CA593-5568-457A-9CD0-36D4D0B0E68E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{941CA593-5568-457A-9CD0-36D4D0B0E68E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B178F70B-8C35-44CF-B1C9-A2545637E59E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B178F70B-8C35-44CF-B1C9-A2545637E59E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B178F70B-8C35-44CF-B1C9-A2545637E59E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B178F70B-8C35-44CF-B1C9-A2545637E59E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B24C2586-3ADF-4817-8BA2-E50DDA597831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B24C2586-3ADF-4817-8BA2-E50DDA597831}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B24C2586-3ADF-4817-8BA2-E50DDA597831}.Release|Any CPU.ActiveCfg = Release|Any CPU

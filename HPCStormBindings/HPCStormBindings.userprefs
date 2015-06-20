@@ -2,18 +2,15 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="../br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl/src/1.0.0.0/IChannelImpl.cs">
     <Files>
-      <File FileName="../br.ufc.mdcc.hpc.storm.binding.channel.Binding/src/1.0.0.0/IChannel.cs" Line="12" Column="19" />
+      <File FileName="../br.ufc.mdcc.hpc.storm.binding.channel.Binding/src/1.0.0.0/IChannel.cs" Line="1" Column="1" />
       <File FileName="../br.ufc.mdcc.hpc.storm.binding.channel.Binding/src/1.0.0.0/Request.cs" Line="1" Column="1" />
-      <File FileName="../br.ufc.mdcc.hpc.storm.binding.channel.Binding/src/1.0.0.0/Status.cs" Line="1" Column="1" />
       <File FileName="../br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl/src/1.0.0.0/IChannelImpl.cs" Line="16" Column="7" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="br.ufc.mdcc.hpc.storm.binding.channel.Binding" expanded="True" />
-          <Node name="br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl" expanded="True">
-            <Node name="IChannelImpl.cs" selected="True" />
-          </Node>
+          <Node name="br.ufc.mdcc.hpc.storm.binding.task.impl.TaskBindingImpl" expanded="True" selected="True" />
+          <Node name="br.ufc.mdcc.hpc.storm.binding.task.TaskBinding" expanded="True" />
         </State>
       </Pad>
     </Pads>
