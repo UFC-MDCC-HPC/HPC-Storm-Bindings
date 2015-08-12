@@ -1,0 +1,13 @@
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.impl.TestBindingAppImpl/teste.impl.TestBindingAppImpl/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.impl.TestBindingAppImpl/teste.impl.TestBindingAppImpl/bin/Debug/teste.impl.TestBindingAppImpl.dll.mdb
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.impl.TestBindingAppImpl/teste.impl.TestBindingAppImpl/bin/Debug/teste.impl.TestBindingAppImpl.dll
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.impl.TestBindingAppImpl/teste.impl.TestBindingAppImpl/obj/Debug/teste.impl.TestBindingAppImpl.dll
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.impl.TestBindingAppImpl/teste.impl.TestBindingAppImpl/obj/Debug/teste.impl.TestBindingAppImpl.dll.mdb
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.impl.TestBindingAppImpl/teste.impl.TestBindingAppImpl/bin/Debug/DGAC.dll
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.impl.TestBindingAppImpl/teste.impl.TestBindingAppImpl/bin/Debug/MPI.dll
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.impl.TestBindingAppImpl/teste.impl.TestBindingAppImpl/bin/Debug/teste.TestBindingApp.dll
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.impl.TestBindingAppImpl/teste.impl.TestBindingAppImpl/bin/Debug/teste.TestBindingApp.dll.mdb
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.impl.TestBindingAppImpl/teste.impl.TestBindingAppImpl/bin/Debug/br.ufc.mdcc.hpc.storm.binding.channel.Binding.dll
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.impl.TestBindingAppImpl/teste.impl.TestBindingAppImpl/bin/Debug/br.ufc.mdcc.hpc.storm.binding.channel.Binding.dll.mdb
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.impl.TestBindingAppImpl/teste.impl.TestBindingAppImpl/bin/Debug/br.ufc.mdcc.hpc.storm.kind.Binding.dll
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.impl.TestBindingAppImpl/teste.impl.TestBindingAppImpl/bin/Debug/br.ufc.mdcc.hpc.storm.kind.Binding.dll.mdb

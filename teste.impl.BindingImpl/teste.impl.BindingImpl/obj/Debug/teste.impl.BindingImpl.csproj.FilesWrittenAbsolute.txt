@@ -1,0 +1,9 @@
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.impl.BindingImpl/teste.impl.BindingImpl/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.impl.BindingImpl/teste.impl.BindingImpl/bin/Debug/teste.impl.BindingImpl.dll.mdb
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.impl.BindingImpl/teste.impl.BindingImpl/bin/Debug/teste.impl.BindingImpl.dll
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.impl.BindingImpl/teste.impl.BindingImpl/obj/Debug/teste.impl.BindingImpl.dll
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.impl.BindingImpl/teste.impl.BindingImpl/obj/Debug/teste.impl.BindingImpl.dll.mdb
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.impl.BindingImpl/teste.impl.BindingImpl/bin/Debug/DGAC.dll
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.impl.BindingImpl/teste.impl.BindingImpl/bin/Debug/MPI.dll
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.impl.BindingImpl/teste.impl.BindingImpl/bin/Debug/teste.Binding.dll
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.impl.BindingImpl/teste.impl.BindingImpl/bin/Debug/teste.Binding.dll.mdb

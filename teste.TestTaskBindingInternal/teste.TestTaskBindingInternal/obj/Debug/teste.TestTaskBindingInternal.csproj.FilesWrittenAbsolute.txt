@@ -1,0 +1,12 @@
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.TestTaskBindingInternal/teste.TestTaskBindingInternal/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.TestTaskBindingInternal/teste.TestTaskBindingInternal/bin/Debug/teste.TestTaskBindingInternal.dll.mdb
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.TestTaskBindingInternal/teste.TestTaskBindingInternal/bin/Debug/teste.TestTaskBindingInternal.dll
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.TestTaskBindingInternal/teste.TestTaskBindingInternal/obj/Debug/teste.TestTaskBindingInternal.dll
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.TestTaskBindingInternal/teste.TestTaskBindingInternal/obj/Debug/teste.TestTaskBindingInternal.dll.mdb
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.TestTaskBindingInternal/teste.TestTaskBindingInternal/bin/Debug/DGAC.dll
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.TestTaskBindingInternal/teste.TestTaskBindingInternal/bin/Debug/br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase.dll
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.TestTaskBindingInternal/teste.TestTaskBindingInternal/bin/Debug/br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase.dll.mdb
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.TestTaskBindingInternal/teste.TestTaskBindingInternal/bin/Debug/br.ufc.mdcc.hpc.storm.binding.task.TaskPortTypeExample.dll
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.TestTaskBindingInternal/teste.TestTaskBindingInternal/bin/Debug/br.ufc.mdcc.hpc.storm.binding.task.TaskPortTypeExample.dll.mdb
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.TestTaskBindingInternal/teste.TestTaskBindingInternal/bin/Debug/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType.dll
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/teste.TestTaskBindingInternal/teste.TestTaskBindingInternal/bin/Debug/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType.dll.mdb
