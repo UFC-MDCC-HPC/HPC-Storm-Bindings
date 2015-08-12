@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>10.0.0</ProductVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{CC615D74-992F-4BCD-8926-AFB3F1C8301E}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -47,10 +47,4 @@
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.storm.binding.context.PartnerKind\br.ufc.mdcc.hpc.storm.binding.context.PartnerKind\br.ufc.mdcc.hpc.storm.binding.context.PartnerKind.csproj">
-      <Project>{CE63E9CF-88BE-4143-BA6F-E555C742E877}</Project>
-      <Name>br.ufc.mdcc.hpc.storm.binding.context.PartnerKind</Name>
-    </ProjectReference>
-  </ItemGroup>
 </Project>
