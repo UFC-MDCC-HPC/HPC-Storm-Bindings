@@ -1,17 +1,6 @@
 ﻿<Properties StartupItem="../teste.impl.TestBindingAppImpl/teste.impl.TestBindingAppImpl/teste.impl.TestBindingAppImpl.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../br.ufc.mdcc.hpc.storm.binding.task.impl.TaskBindingBaseImpl/src/1.0.0.0/BaseTaskPort.cs">
-    <Files>
-      <File FileName="../br.ufc.mdcc.hpc.storm.binding.task.impl.TaskBindingBaseImpl/src/1.0.0.0/BaseTaskPort.cs" Line="8" Column="42" />
-      <File FileName="../br.ufc.mdcc.hpc.storm.binding.task.TaskPortTypeExample/src/1.0.0.0/ITaskPortTypeExample.cs" Line="1" Column="1" />
-      <File FileName="../br.ufc.mdcc.hpc.storm.binding.task.TaskPortTypeExample/src/1.0.0.0/BaseITaskPortTypeExample.cs" Line="1" Column="1" />
-      <File FileName="../br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/src/1.0.0.0/ITaskPortType.cs" Line="1" Column="1" />
-      <File FileName="../br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/src/1.0.0.0/BaseITaskPortType.cs" Line="1" Column="1" />
-      <File FileName="../br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/src/1.0.0.0/ITaskPort.cs" Line="1" Column="1" />
-      <File FileName="../br.ufc.mdcc.hpc.storm.binding.task.TaskBindingExample/src/1.0.0.0/ITaskPortExample.cs" Line="1" Column="1" />
-      <File FileName="../br.ufc.mdcc.hpc.storm.binding.task.TaskBindingExample/src/1.0.0.0/BaseITaskPortExample.cs" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/home/heron/Copy/ufc_mdcc_hpc/HPC-Storm-Bindings/br.ufc.mdcc.hpc.storm.binding.task.impl.TaskBindingImpl/src/TaskPort.cs" line="205" column="1" />

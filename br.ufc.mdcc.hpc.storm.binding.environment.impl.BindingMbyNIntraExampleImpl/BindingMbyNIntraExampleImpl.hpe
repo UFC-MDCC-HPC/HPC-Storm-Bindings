@@ -11,12 +11,6 @@
         </visualDescription>
         <parameter formFieldId="client_port_type" varName="C"/>
         <parameter formFieldId="server_port_type" varName="S"/>
-        <unitBounds parallel="true" uRef="client">
-          <visualDescription h="20" w="20" x="8" y="21"/>
-        </unitBounds>
-        <unitBounds parallel="true" uRef="server">
-          <visualDescription h="20" w="20" x="66" y="24"/>
-        </unitBounds>
       </component>
     </baseType>
     <versions field1="1" field2="0" field3="0" field4="0"/>
@@ -29,17 +23,11 @@
       <visualDescription h="60" w="100" x="47" y="286">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <unitBounds parallel="true" uRef="environment_port_type">
-        <visualDescription h="20" w="20" x="5" y="2"/>
-      </unitBounds>
     </innerComponent>
     <innerComponent localRef="server_port_type" location="br.ufc.mdcc.hpc.storm.binding.environment.example.MbyN.EnvironmentPortTypeServer/EnvironmentPortTypeServer.hpe" multiple="false" name="EnvironmentPortTypeServer" package="br.ufc.mdcc.hpc.storm.binding.environment.example.MbyN" exposed="false">
       <visualDescription h="60" w="100" x="161" y="351">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <unitBounds parallel="true" uRef="environment_port_type">
-        <visualDescription h="20" w="20" x="5" y="2"/>
-      </unitBounds>
     </innerComponent>
     <supplyParameter cRef="client_port_type" direct="true" varName="C"/>
     <supplyParameter cRef="server_port_type" direct="true" varName="S"/>
@@ -80,11 +68,9 @@
       </action>
     </interface>
     <unit facet="0" iRef="IBindingMyNIntraExampleClient" multiple="true" private="false" replica="0" uRef="client" visibleInterface="true">
-      <super cRef="base" uRef="client"/>
       <visualDescription h="40" w="80" x="32" y="253"/>
     </unit>
     <unit facet="0" iRef="IBindingMyNIntraExampleServer" multiple="true" private="false" replica="0" uRef="server" visibleInterface="true">
-      <super cRef="base" uRef="server"/>
       <visualDescription h="40" w="80" x="414" y="266"/>
     </unit>
   </componentInfo>

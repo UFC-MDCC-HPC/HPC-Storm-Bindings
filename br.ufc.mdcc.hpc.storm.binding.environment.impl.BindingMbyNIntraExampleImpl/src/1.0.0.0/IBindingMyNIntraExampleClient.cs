@@ -24,17 +24,8 @@ namespace br.ufc.mdcc.hpc.storm.binding.environment.impl.BindingMbyNIntraExample
 		{
 			int remote_leader = this.UnitRanks ["server"] [0];
 			channel = new MPI.Intercommunicator(this.PeerComm, 0, this.Communicator, remote_leader, 0);
-			((IMbyNClientPortTypeExampleImpl)service).Channel = channel;
 			service = new IMbyNClientPortTypeExampleImpl ();
-
-			// ABRINDO SERVIÇO para conexão do web service ... a ser feito pelo objeto proxy 
-			// var binding = new WSHttpBinding ();
-			// var address = new Uri ("http://localhost:8085");
-			// var host = new ServiceHost (service);
-			// host.AddServiceEndpoint (typeof (IMbyNClientPortTypeExample), binding, address);
-			// host.Open ();		
-
-
+			((IMbyNClientPortTypeExampleImpl)service).Channel = channel;
 		}
 
 		public override void main()
@@ -45,7 +36,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.environment.impl.BindingMbyNIntraExample
 
 		private IMbyNClientPortTypeExample service;
 
-		public IMbyNClientPortTypeExample Service {
+		public IMbyNClientPortTypeExample Client {
 			get {
 				return service;
 			}

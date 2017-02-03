@@ -18,24 +18,24 @@ namespace br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase
 		Thread invoke(object action_id, Action reaction, out IActionFuture future);
 	}
 	
-	public interface IActionFuture
-	{
-		void wait();
-		bool test();
-		IActionFutureSet createSet();
-	}
+		public interface IActionFuture
+		{
+			void wait();
+			bool test();
+			IActionFutureSet createSet();
+		}
 
-	public interface IActionFutureSet 
-	{
-		void addAction(IActionFuture new_future);
+		public interface IActionFutureSet 
+		{
+			void addAction(IActionFuture new_future);
 
-		void waitAll();
-		IActionFuture waitAny();
+			void waitAll();
+			IActionFuture waitAny();
 
-		bool testAll();
-		IActionFuture testAny();
+			bool testAll();
+			IActionFuture testAny();
 
-		IActionFuture[] Completed { get; }
-		IActionFuture[] Pending { get; }
-	}
+			IActionFuture[] Completed { get; }
+			IActionFuture[] Pending { get; }
+		}
 }

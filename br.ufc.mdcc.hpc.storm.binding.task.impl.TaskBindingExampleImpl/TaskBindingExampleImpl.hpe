@@ -21,11 +21,8 @@
             <visualDescription h="20" w="20" x="28" y="2"/>
           </unitBounds>
         </port>
-        <unitBounds parallel="true" uRef="peer_left">
+        <unitBounds parallel="true" uRef="peer">
           <visualDescription h="20" w="20" x="5" y="2"/>
-        </unitBounds>
-        <unitBounds parallel="true" uRef="peer_right">
-          <visualDescription h="20" w="20" x="28" y="2"/>
         </unitBounds>
       </component>
     </baseType>
@@ -62,13 +59,9 @@
         <protocol/>
       </action>
     </interface>
-    <unit facet="0" iRef="TaskPortExample" multiple="true" private="false" replica="0" uRef="peer_left" visibleInterface="true">
-      <super cRef="base" uRef="peer_left"/>
+    <unit facet="0" iRef="TaskPortExample" multiple="true" private="false" replica="0" uRef="peer" visibleInterface="true">
+      <super cRef="base" uRef="peer"/>
       <visualDescription h="40" w="80" x="60" y="191"/>
-    </unit>
-    <unit facet="0" iRef="TaskPortExample" multiple="true" private="false" replica="0" uRef="peer_right" visibleInterface="true">
-      <super cRef="base" uRef="peer_right"/>
-      <visualDescription h="40" w="80" x="405" y="145"/>
     </unit>
   </componentInfo>
 </component:component>

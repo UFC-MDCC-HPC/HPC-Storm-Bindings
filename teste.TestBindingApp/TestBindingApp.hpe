@@ -7,7 +7,7 @@
     </visualAttributes>
   </header>
   <componentInfo>
-    <innerComponent hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000174170214ec8de902f58c9e2758714817ff949c0c098fc0bb0d7f68cfab78767e1a0c1983242dfd742d7e3732d9050312c8c95d9130a7071b3ccddfe9b59fd7b8df6676b7b12a4a3f7e1fdad77bdaeb4396d673feddeaf3545c105ba8114bc03f067758555bf72db629d435bfeae77bbb9a77a0690d7415de49fea886da17dd1" localRef="binding" location="br.ufc.mdcc.hpc.storm.binding.channel.Binding/Binding.hpe" multiple="false" name="Binding" package="br.ufc.mdcc.hpc.storm.binding.channel" exposed="false">
+    <innerComponent localRef="binding" location="br.ufc.mdcc.hpc.storm.binding.channel.Binding/Binding.hpe" multiple="false" name="Binding" package="br.ufc.mdcc.hpc.storm.binding.channel" exposed="false">
       <visualDescription h="63" w="100" x="275" y="211">
         <color b="255" g="255" r="255"/>
       </visualDescription>

@@ -58,7 +58,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 			Console.WriteLine("CHECKING " + this.RootCommunicator.Rank + "," + dest.Item2 + ", tag=" + tag);
 
 			Console.WriteLine (this.PeerRank + ": 1 - BEGIN SEND TO <" + dest.Item1 + "," + dest.Item2 + "> : " + TAG_SEND_OPERATION);
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.SEND, tag), 0, TAG_SEND_OPERATION);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.SEND, tag), 0, TAG_SEND_OPERATION);
 			Console.WriteLine (this.PeerRank + ": 2 - BEGIN SEND TO <" + dest.Item1 + "," + dest.Item2 + "> : " + tag);
 
 			byte[] value_packet = ObjectToByteArray (value);
@@ -72,7 +72,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 			//int conversation_tag = takeNextConversationTag();
 			Console.WriteLine(this.PeerRank + ": CHECKING " + this.RootCommunicator.Rank + "," + dest.Item2 + ", tag=" + tag);
 			Console.WriteLine (this.PeerRank + ": 1 - BEGIN SEND TO <" + dest.Item1 + "," + dest.Item2 + "> : " + TAG_SEND_OPERATION);
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.SEND, tag), 0, TAG_SEND_OPERATION);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.SEND, tag), 0, TAG_SEND_OPERATION);
 			Console.WriteLine (this.PeerRank + ": 2 - BEGIN SEND TO <" + dest.Item1 + "," + dest.Item2 + "> : " + tag);
 			byte[] value_packet = ObjectToByteArray (value);
 			MPI.Request root_request = this.RootCommunicator.ImmediateSend<Tuple<int,int,int,byte[]>> (new Tuple<int,int,int,byte[]>(dest.Item1, dest.Item2, tag, value_packet), 0, tag);
@@ -85,7 +85,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 		public void Send<T> (T[] values, Tuple<int,int> dest, int tag)
 		{
 			//int conversation_tag = takeNextConversationTag();
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.SEND_ARRAY, tag), 0, TAG_SEND_OPERATION);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.SEND_ARRAY, tag), 0, TAG_SEND_OPERATION);
 			byte[] value_packet = ObjectToByteArray (values);
 			this.RootCommunicator.Send<Tuple<int,int,int,byte[]>> (new Tuple<int,int,int,byte[]>(dest.Item1, dest.Item2, tag, value_packet), 0, tag);
 		}
@@ -95,7 +95,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 			//int conversation_tag = takeNextConversationTag();
 			Console.WriteLine(this.PeerRank + ": CHECKING " + this.RootCommunicator.Rank + "," + dest.Item2);
 			Console.WriteLine (this.PeerRank + ": 1 - BEGIN SEND TO <" + dest.Item1 + "," + dest.Item2 + "> : " + TAG_SEND_OPERATION);
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.SEND_ARRAY, tag), 0, TAG_SEND_OPERATION);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.SEND_ARRAY, tag), 0, TAG_SEND_OPERATION);
 			Console.WriteLine (this.PeerRank + ": 2 - BEGIN SEND TO <" + dest.Item1 + "," + dest.Item2 + "> : " + tag);
 			byte[] value_packet = ObjectToByteArray (values);
 			MPI.Request root_request = this.RootCommunicator.ImmediateSend<Tuple<int,int,int,byte[]>> (new Tuple<int,int,int,byte[]>(dest.Item1, dest.Item2, tag, value_packet), 0, tag);
@@ -122,7 +122,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 		{
 			int conversation_tag = takeNextConversationTag();
 			Console.WriteLine (this.PeerRank + ": 1 - BEGIN RECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + TAG_SEND_OPERATION);
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.RECEIVE, conversation_tag), 0, TAG_SEND_OPERATION);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.RECEIVE, conversation_tag), 0, TAG_SEND_OPERATION);
 			Console.WriteLine (this.PeerRank + ": 2 - BEGIN RECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + conversation_tag);
 			this.RootCommunicator.Send<Tuple<int,int,int>> (new Tuple<int,int,int>(source.Item1, source.Item2, tag), 0, conversation_tag);
 			Console.WriteLine (this.PeerRank + ": 3 - BEGIN RECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + tag);
@@ -139,7 +139,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 		{
 			int conversation_tag = takeNextConversationTag();
 			Console.WriteLine (this.PeerRank + ": 1 - BEGIN RECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + TAG_SEND_OPERATION);
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.RECEIVE, conversation_tag), 0, TAG_SEND_OPERATION);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.RECEIVE, conversation_tag), 0, TAG_SEND_OPERATION);
 			Console.WriteLine (this.PeerRank + ": 2 - BEGIN RECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + conversation_tag);
 			this.RootCommunicator.Send<Tuple<int,int,int>> (new Tuple<int,int,int>(source.Item1, source.Item2, tag), 0, conversation_tag);
 			Console.WriteLine (this.PeerRank + ": 3 - BEGIN RECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + tag);
@@ -159,7 +159,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 		public void Receive<T> (Tuple<int,int> source, int tag, ref T[] values, out br.ufc.mdcc.hpc.storm.binding.channel.Binding.CompletedStatus status)
 		{
 			int conversation_tag = takeNextConversationTag();
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.RECEIVE_ARRAY, conversation_tag), 0, TAG_SEND_OPERATION);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.RECEIVE_ARRAY, conversation_tag), 0, TAG_SEND_OPERATION);
 			this.RootCommunicator.Send<Tuple<int,int,int>> (new Tuple<int,int,int>(source.Item1, source.Item2, tag), 0, conversation_tag);
 			MPI.CompletedStatus status_root;
 			byte[] v;
@@ -179,7 +179,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 		{
 			int conversation_tag = takeNextConversationTag();
 			Console.WriteLine (this.PeerRank + ": 1 - BEGIN RECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + TAG_SEND_OPERATION);
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.RECEIVE_ARRAY, conversation_tag), 0, TAG_SEND_OPERATION);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.RECEIVE_ARRAY, conversation_tag), 0, TAG_SEND_OPERATION);
 			Console.WriteLine (this.PeerRank + ": 2 - BEGIN RECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + conversation_tag);
 			this.RootCommunicator.Send<Tuple<int,int,int>> (new Tuple<int,int,int>(source.Item1, source.Item2, tag), 0, conversation_tag);
 			Console.WriteLine (this.PeerRank + ": 3 - BEGIN RECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + tag);
@@ -193,14 +193,14 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 		public br.ufc.mdcc.hpc.storm.binding.channel.Binding.Status Probe (Tuple<int,int> source, int tag)
 		{
 			int conversation_tag = takeNextConversationTag();
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.PROBE, conversation_tag), 0, TAG_SEND_OPERATION);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.PROBE, conversation_tag), 0, TAG_SEND_OPERATION);
 			throw new NotImplementedException ();
 		}
 
 		public br.ufc.mdcc.hpc.storm.binding.channel.Binding.Status ImmediateProbe (Tuple<int,int> source, int tag)
 		{
 			int conversation_tag = takeNextConversationTag();
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.PROBE, conversation_tag), 0, TAG_SEND_OPERATION);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.PROBE, conversation_tag), 0, TAG_SEND_OPERATION);
 			throw new NotImplementedException ();
 		}
 
@@ -221,7 +221,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 		public void Allgather<T> (int facet, T inValue, ref T[] outValues)
 		{
 			int conversation_tag = takeNextConversationTag();
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.ALL_GATHER, conversation_tag), 0, TAG_SEND_OPERATION);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.ALL_GATHER, conversation_tag), 0, TAG_SEND_OPERATION);
 			throw new NotImplementedException ();
 		}
 		 
@@ -238,7 +238,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 		public void AllgatherFlattened<T> (int facet, T[] inValues, int[] counts, ref T[] outValues)
 		{
 			int conversation_tag = takeNextConversationTag();
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.ALL_GATHER_FLATTENED, conversation_tag), 0, TAG_SEND_OPERATION);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.ALL_GATHER_FLATTENED, conversation_tag), 0, TAG_SEND_OPERATION);
 			throw new NotImplementedException ();
 		}
 
@@ -247,7 +247,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 		public T Allreduce<T> (int facet, T value, ReductionOperation<T> op)
 		{
 			int conversation_tag = takeNextConversationTag();
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.ALL_REDUCE, conversation_tag), 0, TAG_SEND_OPERATION + 0);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.ALL_REDUCE, conversation_tag), 0, TAG_SEND_OPERATION + 0);
 			throw new NotImplementedException ();
 		}
 
@@ -263,7 +263,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 		public void Allreduce<T> (int facet, T[] inValues, ReductionOperation<T> op, ref T[] outValues)
 		{
 			int conversation_tag = takeNextConversationTag();
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.ALL_REDUCE_ARRAY, conversation_tag), 0, TAG_SEND_OPERATION + 0);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.ALL_REDUCE_ARRAY, conversation_tag), 0, TAG_SEND_OPERATION + 0);
 			throw new NotImplementedException ();
 		}
 
@@ -279,7 +279,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 		public void Alltoall<T> (int facet, T[] inValues, ref T[] outValues)
 		{
 			int conversation_tag = takeNextConversationTag();
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.ALL_TO_ALL, conversation_tag), 0, TAG_SEND_OPERATION);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.ALL_TO_ALL, conversation_tag), 0, TAG_SEND_OPERATION);
 			throw new NotImplementedException ();
 		}
 
@@ -288,7 +288,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 		public void AlltoallFlattened<T> (int facet, T[] inValues, int[] sendCounts, int[] recvCounts, ref T[] outValues)
 		{
 			int conversation_tag = takeNextConversationTag();
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.ALL_TO_ALL_FLATTENED, conversation_tag), 0, TAG_SEND_OPERATION + 0);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.ALL_TO_ALL_FLATTENED, conversation_tag), 0, TAG_SEND_OPERATION + 0);
 			throw new NotImplementedException ();
 		}
 
@@ -304,7 +304,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 		public void ReduceScatter<T> (int facet, T[] inValues, ReductionOperation<T> op, int[] counts, ref T[] outValues)
 		{
 			int conversation_tag = takeNextConversationTag();
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.REDUCE_SCATTER, conversation_tag), 0, TAG_SEND_OPERATION + 0);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.REDUCE_SCATTER, conversation_tag), 0, TAG_SEND_OPERATION + 0);
 			throw new NotImplementedException ();
 		}
 
@@ -313,14 +313,14 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 		public void Broadcast<T> (int facet, ref T value, int root)
 		{
 			int conversation_tag = takeNextConversationTag();
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.BROADCAST, conversation_tag), 0, TAG_SEND_OPERATION + 0);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.BROADCAST, conversation_tag), 0, TAG_SEND_OPERATION + 0);
 			throw new NotImplementedException ();
 		}
 
 		public void Broadcast<T> (int facet, ref T[] values, int root)
 		{
 			int conversation_tag = takeNextConversationTag();
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.BROADCAST_ARRAY, conversation_tag), 0, TAG_SEND_OPERATION);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.BROADCAST_ARRAY, conversation_tag), 0, TAG_SEND_OPERATION);
 			throw new NotImplementedException ();
 		}
 
@@ -329,21 +329,21 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 		public void Scatter<T> (int facet, T[] values)
 		{
 			int conversation_tag = takeNextConversationTag();
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.SCATTER, conversation_tag), 0, TAG_SEND_OPERATION);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.SCATTER, conversation_tag), 0, TAG_SEND_OPERATION);
 			throw new NotImplementedException ();
 		}
 
 		public T Scatter<T> (int facet, int root)
 		{
 			int conversation_tag = takeNextConversationTag();
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.SCATTER, conversation_tag), 0, TAG_SEND_OPERATION);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.SCATTER, conversation_tag), 0, TAG_SEND_OPERATION);
 			throw new NotImplementedException ();
 		}
 
 		public void Scatter<T> (int facet)
 		{
 			int conversation_tag = takeNextConversationTag();
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.SCATTER, conversation_tag), 0, TAG_SEND_OPERATION);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.SCATTER, conversation_tag), 0, TAG_SEND_OPERATION);
 			throw new NotImplementedException ();
 		}
 
@@ -388,7 +388,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 		public void ScatterFromFlattened<T> (int facet, T[] inValues, int[] counts, int root, ref T[] outValues)
 		{
 			int conversation_tag = takeNextConversationTag();
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.SCATTER_FROM_FLATTENED, conversation_tag), 0, TAG_SEND_OPERATION + 0);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.SCATTER_FROM_FLATTENED, conversation_tag), 0, TAG_SEND_OPERATION + 0);
 			throw new NotImplementedException ();
 		}
 
@@ -424,7 +424,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 		internal void Gather_impl<T>(int facet, bool isRoot, int size, T inValue, int root, ref T[] outValues)
 		{
 			int conversation_tag = takeNextConversationTag();
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.GATHER, conversation_tag), 0, TAG_SEND_OPERATION + 0);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.GATHER, conversation_tag), 0, TAG_SEND_OPERATION + 0);
 			throw new NotImplementedException ();
 		}
 
@@ -496,7 +496,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 		internal void GatherFlattened_impl<T>(int facet, bool isRoot, int size, T[] inValues, int[] counts, int root, ref T[] outValues)
 		{ 
 			int conversation_tag = takeNextConversationTag();
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.GATHER_FLATTENED, conversation_tag), 0, TAG_SEND_OPERATION + 0);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.GATHER_FLATTENED, conversation_tag), 0, TAG_SEND_OPERATION + 0);
 			throw new NotImplementedException ();
 		}
 
@@ -510,7 +510,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 		internal T Reduce_impl<T>(int facet, bool isRoot, int size, T value, ReductionOperation<T> op, int root)
 		{
 			int conversation_tag = takeNextConversationTag();
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.REDUCE, conversation_tag), 0, TAG_SEND_OPERATION + 0);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.REDUCE, conversation_tag), 0, TAG_SEND_OPERATION + 0);
 			throw new NotImplementedException ();
 		}
 
@@ -526,7 +526,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 		public void Reduce<T> (int facet, T[] inValues, ReductionOperation<T> op, int root, ref T[] outValues)
 		{
 			int conversation_tag = takeNextConversationTag();
-			this.RootCommunicator.Send<Tuple<int /*AliencommunicatorOperation*/, int>>(new Tuple<int /*AliencommunicatorOperation*/, int>(AliencommunicatorOperation.REDUCE_ARRAY, conversation_tag), 0, TAG_SEND_OPERATION + 0);
+			this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.REDUCE_ARRAY, conversation_tag), 0, TAG_SEND_OPERATION + 0);
 			throw new NotImplementedException ();
 		}
 

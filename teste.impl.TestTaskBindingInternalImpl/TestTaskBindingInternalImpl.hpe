@@ -5,8 +5,8 @@
       <extensionType>
         <implements>true</implements>
       </extensionType>
-      <component hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000834d5df82f428893568b18e3ec835a1b371989a6d499ee3733d8c238f80ca9fd71d77fe35cb6f879a55d469d2293f52972819664612fe036ea244e825e3b5c587802042c0f3c1c20981812bff51248aaeaf696c6b0f518e70bd46394c50b80669727cc01de0f3c01b3e08064aa140c0d3346383419fed65758b6ceaa62b53384" localRef="base" location="teste.TestTaskBindingInternal/TestTaskBindingInternal.hpe" name="TestTaskBindingInternal" package="teste" version="1.0.0.0">
-        <visualDescription h="60" w="100" x="226" y="194">
+      <component hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000d12a998b3b76609f8c5b7feebaa61d46966685fd4237d6b66da74439faa380e065eef0ccc7992f4d7197a89464ee643b531bad02647453c21354b3b0a19bdb1f63197a0ddbcd37f2a7af00fd628adcc267a83c42bff52c07841047459d9d626a0e47d8a3f739209856f312e69192e458aab1169d12a114f997c6808547c259bf" localRef="base" location="teste.TestTaskBindingInternal/TestTaskBindingInternal.hpe" name="TestTaskBindingInternal" package="teste" version="1.0.0.0">
+        <visualDescription h="60" w="100" x="230" y="213">
           <color b="255" g="255" r="255"/>
         </visualDescription>
         <unitBounds parallel="true" uRef="left_unit">

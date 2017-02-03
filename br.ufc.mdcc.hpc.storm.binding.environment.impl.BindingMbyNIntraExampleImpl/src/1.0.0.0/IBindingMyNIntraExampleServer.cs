@@ -344,7 +344,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.environment.impl.BindingMbyNIntraExample
 
 		private IMbyNServerPortTypeExample service;
 
-		public IMbyNServerPortTypeExample Service {
+		public IMbyNServerPortTypeExample Server {
 			set {
 				this.service = value;
 			}
